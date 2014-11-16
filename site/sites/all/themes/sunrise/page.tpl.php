@@ -87,13 +87,12 @@
 
         <div class="social">
             <ul class="social">
-                <!--TODO: -->
-                <li><a href="http://localhost:8888/wordpress/?feed=rss" title="RSS" class="twitter"></a></li>
-                <li><a href="http://localhost:8888/wordpress/?feed=rss" title="RSS" class="facebook"></a></li>
-                <li><a href="http://localhost:8888/wordpress/?feed=rss" title="RSS" class="gplus"></a></li>
-                <li><a href="http://localhost:8888/wordpress/?feed=rss" title="RSS" class="youtube"></a></li>
-                <li><a href="http://localhost:8888/wordpress/?feed=rss" title="RSS" class="rss"></a></li>
-                <li><a href="http://localhost:8888/wordpress/?feed=rss" title="RSS" class="skype"></a></li>
+                <li><a href="#" title="RSS" class="twitter"></a></li>
+                <li><a href="#" title="RSS" class="facebook"></a></li>
+                <li><a href="#" title="RSS" class="gplus"></a></li>
+                <li><a href="#" title="RSS" class="youtube"></a></li>
+                <li><a href="#" title="RSS" class="rss"></a></li>
+                <li><a href="#" title="RSS" class="skype"></a></li>
             </ul>
         </div>
         
