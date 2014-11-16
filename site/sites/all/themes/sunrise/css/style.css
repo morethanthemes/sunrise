@@ -222,6 +222,17 @@ thead tr th, thead tr td, tbody tr th, tbody tr td { padding: 8px; line-height: 
     font-size: 14px;
 }
 
+#promoted h1 {
+    font-size: 34px;
+font-weight: 100;
+color: #868686;
+text-align: center;
+margin-bottom: 40px;
+    line-height: 1;
+}
+
+
+
 
 #banner-inside { padding-top: 60px; margin-bottom: 40px; }
 

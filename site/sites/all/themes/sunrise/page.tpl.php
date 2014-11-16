@@ -160,7 +160,6 @@
     <!-- #top-content -->
     <div id="top-content" class="clearfix">
         <div class="container">
-
             <!-- #top-content-inside -->
             <div id="top-content-inside" class="clearfix">
                 <div class="row">
@@ -207,6 +206,7 @@
     <?php if ($page['promoted']):?>
     <!-- #promoted -->
     <div id="promoted" class="clearfix">
+        <h1>Featured</h1>
         <div id="promoted-inside" class="clearfix">
             <div class="row">
                 <div class="col-md-12">
