@@ -378,13 +378,10 @@
             <div class="row">
                 <div class="col-md-12">
                     <!-- #subfooter-left -->
-                    <div class="subfooter-area">
-                    <?php print theme('links__system_secondary_menu', array('links' => $secondary_menu, 'attributes' => array('class' => array('menu', 'secondary-menu', 'links', 'clearfix')))); ?>                        
-
+                    <div class="subfooter-area">                  
                     <?php if ($page['footer']):?>
                     <?php print render($page['footer']); ?>
                     <?php endif; ?>
-
                     </div>
                     <!-- EOF: #subfooter-left -->
                 </div>
