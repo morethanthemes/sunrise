@@ -1,7 +1,3 @@
-<?php if (theme_get_setting('scrolltop_display')): ?>
-<div id="toTop"><span class="glyphicon glyphicon-chevron-up"></span></div>
-<?php endif; ?>
-
 <?php if ($page['header_top_left'] || $page['header_top_right']) :?>
 <!-- #header-top -->
 <!-- TODO: remove this displayed none area -->
