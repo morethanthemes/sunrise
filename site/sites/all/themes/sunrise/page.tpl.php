@@ -137,13 +137,6 @@
         <div class="container">
 
             <!-- #banner-inside -->
-            <div id="banner-inside" class="clearfix">
-                <div class="row">
-                    <div class="col-md-12">
-                    <?php print render($page['banner']); ?>
-                    </div>
-                </div>
-            </div>
             <!-- EOF: #banner-inside -->        
 
         </div>
