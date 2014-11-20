@@ -270,7 +270,7 @@ display: none; }
     font-size: 16px;
     font-weight: bold;
     text-shadow: 1px 1px rgba(0,0,0, .5);
-    background: #D93600 url(img/bg_button.png) 50% 50% repeat-x;
+    background: #D93600 url(../images/local/bg_button.png) 50% 50% repeat-x;
     display: block;
     width: 200px;
     border: 0;
