@@ -18,8 +18,8 @@ regions[banner] = Banner
 regions[highlighted] = Highlighted
 
 regions[promoted] = Promoted - Featured
-
 regions[content] = Content
+
 regions[sidebar_first] = Sidebar First
 regions[sidebar_second] = Sidebar Second
 regions[footer_first] = Footer First

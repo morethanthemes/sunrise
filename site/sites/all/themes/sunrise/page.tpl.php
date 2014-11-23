@@ -212,7 +212,6 @@
     <div id="main-content">
         <div class="container">
         
-            
             <!-- #messages-console -->
             <?php if ($messages):?>
             <div id="messages-console" class="clearfix">
@@ -259,32 +258,33 @@
 
                         <!-- EOF:#content-wrapper -->
                         <div id="content-wrapper">
-                           
-                                <?php print render($title_prefix); ?>
-                                <?php if ($title):?>
-                                <h1 class="page-title"><?php print $title; ?></h1>
-                                <?php endif; ?>
-                                <?php print render($title_suffix); ?>
 
-                                <!-- #tabs -->
-                                <?php if ($tabs):?>
-                                    <div class="tabs">
-                                    <?php print render($tabs); ?>
-                                    </div>
-                                <?php endif; ?>
-                                <!-- EOF: #tabs -->
+                            <!--
+                            <?php print render($title_prefix); ?>
+                            <?php if ($title):?>
+                            <h1 class="page-title"><?php print $title; ?></h1>
+                            <?php endif; ?>
+                            <?php print render($title_suffix); ?>
+                      
+                            <!-- #tabs --
+                            <?php if ($tabs):?>
+                                <div class="tabs">
+                                <?php print render($tabs); ?>
+                                </div>
+                            <?php endif; ?>
+                            <!-- EOF: #tabs --
 
-                                <!-- #action links -->
-                                <?php if ($action_links):?>
-                                    <ul class="action-links">
-                                    <?php print render($action_links); ?>
-                                    </ul>
-                                <?php endif; ?>
-                                <!-- EOF: #action links -->
+                            <!-- #action links --
+                            <?php if ($action_links):?>
+                                <ul class="action-links">
+                                <?php print render($action_links); ?>
+                                </ul>
+                            <?php endif; ?>
+                            <!-- EOF: #action links --
 
-                                <?php print render($page['content']); ?>
-                                <?php print $feed_icons; ?>
-                
+                            <?php print render($page['content']); ?>
+                            <?php print $feed_icons; ?>
+                            -->
 
                         </div>
                         <!-- EOF:#content-wrapper -->

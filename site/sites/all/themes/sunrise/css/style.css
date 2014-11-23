@@ -94,20 +94,14 @@ thead tr th, thead tr td, tbody tr th, tbody tr td { padding: 8px; line-height: 
 
 #header-top { background-color: #fcfcfc; border-bottom: 1px dashed #eaeaea; position: relative; z-index: 12; min-height: 50px; } 
 
-#header-banner-wrapper{    
-    background: #333;
-    background-image: url(../images/homebackground.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    min-height: 200px;
-}
+/* header */
 
 #header { 
-    position: relative; 
-    z-index: 5; 
-    padding: 40px 0; 
-    text-align: center; 
-    min-height: 130px; 
+    margin: 0 auto;
+	padding:30px 0 0;
+	z-index: 1000;
+	width: 100%;
+	position: relative;
 }
 
 #header div.social {
@@ -162,10 +156,20 @@ thead tr th, thead tr td, tbody tr th, tbody tr td { padding: 8px; line-height: 
     background-position: -304px 0;
 }
 
+/* header-banner-wrapper */
+
+#header-banner-wrapper {    
+    background: #333;
+    background-image: url(../images/local/sunrise_background1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 200px;
+}
+
 #header-banner-wrapper div.slogan {
     min-width: 768px;
     max-width: 991px;
-    background: url(../images/bg_slogan.png) top left repeat;
+    background: url(../images/local/bg_slogan.png) top left repeat;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
@@ -187,8 +191,8 @@ thead tr th, thead tr td, tbody tr th, tbody tr td { padding: 8px; line-height: 
 	font-weight: 100;
 }
 
-
-#main-navigation { border-top: 1px dashed #999;
+#main-navigation { 
+    border-top: 1px dashed #999;
     border-bottom: 1px dashed #999;
     margin: 0 auto;
     padding: 0;
@@ -242,9 +246,6 @@ thead tr th, thead tr td, tbody tr th, tbody tr td { padding: 8px; line-height: 
     line-height: 1;
     align-content: center;
 }
-
-
-
 
 #banner-inside { padding-top: 60px; margin-bottom: 40px; }
 
@@ -313,6 +314,7 @@ display: none; }
 #promoted-inside  h3 {
 	margin-bottom: 20px;
 }
+
 #promoted-inside  h3.post-title a {
 	font-size: 22px;
 	color: #E54D1B;
@@ -356,7 +358,6 @@ display: none; }
 	color: #fff;
 }
 
-
 #promoted-inside a.map-toggle {
 	-webkit-border-radius: 5px 5px 0 0px;
 	-moz-border-radius: 5px 5px 0 0px;
@@ -374,6 +375,7 @@ display: none; }
 	text-align: center;
 	color: #999;
 }
+
 #promoted-inside div.google-map a.map-toggle:after {
 	content: " ▾ ";
 	font-size: 20px;
@@ -402,10 +404,7 @@ display: none; }
 	display: none;
 }
 
-
-
-
-/*footer*/
+/* footer */
 #footer { 
     clear: both;
     padding: 20px 0;
@@ -442,7 +441,7 @@ display: none; }
 
 }
 
-/*subfooter*/
+/* subfooter */
 #subfooter { 
 	background: #222;
 	clear: both;
@@ -458,10 +457,6 @@ display: none; }
 	color: #ccc;
 	border-bottom: 1px dotted #666;
 }
-
-
-
-
 
 #header-top .block, #main-navigation .block, #banner .block { padding: 0; }
 
