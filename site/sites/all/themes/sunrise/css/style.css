@@ -3,6 +3,10 @@
 /* Reset unusual Firefox-on-Android default style, see https://github.com/necolas/normalize.css/issues/214*/
 @media (max-width: 991px) { .form-text, .form-textarea, .block-superfish select, .block-search .form-submit { background-image: none; } }
 
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+* { transition: all 0.3s ease-out; } 
+
+
 body { color: #444; font-family: 'Open Sans', sans-serif; font-size: 14px; line-height: 160%; }
 
 p { margin: 0 0 25px; padding: 0; }
@@ -130,7 +134,7 @@ thead tr th, thead tr td, tbody tr th, tbody tr td { padding: 8px; line-height: 
     width: 36px;
     height: 36px;
     margin-top: 0px;
-    background: url(../images/local//social.png) no-repeat;
+    background: url(../images/local/social.png) no-repeat;
     text-indent: -999em;
     opacity: 0.5;
 }
@@ -192,11 +196,6 @@ thead tr th, thead tr td, tbody tr th, tbody tr td { padding: 8px; line-height: 
     text-align: center; 
 }
 
-/*
-#main-navigation { background-color: #fcfcfc; position: relative; z-index: 11; -webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.075), 0 10px 0 rgba(0,0,0,0.01);
--moz-box-shadow: 0 2px 4px rgba(0,0,0,0.075), 0 10px 0 rgba(0,0,0,0.01); box-shadow: 0 2px 4px rgba(0,0,0,0.075), 0 10px 0 rgba(0,0,0,0.01); }
-*/
-
 /* Responsive Grids */
 
 #page div.col {
@@ -239,7 +238,9 @@ thead tr th, thead tr td, tbody tr th, tbody tr td { padding: 8px; line-height: 
     color: #868686;
     text-align: center;
     margin-bottom: 40px;
+    margin-top: 40px;
     line-height: 1;
+    align-content: center;
 }
 
 
@@ -262,6 +263,67 @@ display: none; }
 #bottom-content { padding: 40px 0 20px 0; }
 
 /*promoted-insied*/
+
+#promoted-inside {
+    width: 90%;
+    max-width: 1130px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+#promoted-inside div.col-md-4{
+    text-align: center;
+}
+
+#promoted-inside div.post-thumb-wrap {
+	background: url(../images/local/pattern1.png) top left repeat;
+	position: relative;
+	overflow: hidden;
+	padding: 15px;
+	text-align: center;
+	display: inline-block;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+	margin-bottom: 20px;
+
+}
+
+#promoted-inside div.post-thumb-wrap:hover {
+	-webkit-transform: rotate(30deg);
+	-moz-transform: rotate(30deg);
+	-ms-transform: rotate(30deg);
+	-o-transform: rotate(30deg);
+	transform: rotate(30deg);
+}
+
+#promoted-inside div.post-thumb-wrap img {
+	display: block;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+	max-width: 245px;
+	/*width: 245px;*/
+	width: 100%;
+	height: auto;
+	margin: 0;
+}
+
+#promoted-inside  h3 {
+	margin-bottom: 20px;
+}
+#promoted-inside  h3.post-title a {
+	font-size: 22px;
+	color: #E54D1B;
+	font-weight: normal;
+}
+
+#promoted-inside div.post-content {
+	font-size: 15px;
+	font-weight: 100;
+}
+
 #promoted-inside a.post_read_more {
     margin: 20px auto;
     color: #fff;
@@ -284,6 +346,65 @@ display: none; }
     box-shadow: 0px 0px 5px rgba(0,0,0, 0.3);
     cursor: pointer;
 }
+
+#promoted-inside a.post_read_more:hover {
+	color:#fff;
+	-webkit-box-shadow: 0px 0px 7px rgba(0,0,0, 0.3);
+	-moz-box-shadow: 0px 0px 7px rgba(0,0,0, 0.3);
+	box-shadow: 0px 0px 7px rgba(0,0,0, 0.3);
+	background-position: 50% 70%;
+	color: #fff;
+}
+
+
+#promoted-inside a.map-toggle {
+	-webkit-border-radius: 5px 5px 0 0px;
+	-moz-border-radius: 5px 5px 0 0px;
+	border-radius: 5px 5px 0 0px;
+	border:1px solid #ccc;
+	border-bottom: 1px solid #fff;
+	display: block;
+	margin: 0 auto;
+	width: 150px;
+	padding: 10px 20px;
+	position: relative;
+	background: #fff;
+	z-index: 2;
+	margin-bottom: 0px;
+	text-align: center;
+	color: #999;
+}
+#promoted-inside div.google-map a.map-toggle:after {
+	content: " ▾ ";
+	font-size: 20px;
+	vertical-align: middle;
+	display: inline-block;
+	margin: -2px 3px 0;
+}
+
+#promoted-inside div.google-map a.collapsed {
+	margin-bottom: -1px;
+}
+
+#promoted-inside div.google-map a.collapsed:after {
+	content: " ▴ ";
+}
+
+#promoted-inside div.google-map map {
+	height: 300px;
+	border-top:1px solid #ccc;
+	position: relative;
+	z-index: 1;
+	display: none;
+	transition:none;
+}
+#promoted-inside div.google-map map a.map-toggle hide {
+	display: none;
+}
+
+
+
+
 /*footer*/
 #footer { 
     clear: both;
