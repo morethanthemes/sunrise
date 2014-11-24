@@ -195,7 +195,6 @@
     <?php if ($page['promoted']):?>
     <!-- #promoted -->
     <div id="promoted" class="clearfix">
-        <h1>Featured</h1>
         <div id="promoted-inside" class="clearfix">
             <div class="row">
                 <div class="col-md-12">
@@ -259,32 +258,16 @@
                         <!-- EOF:#content-wrapper -->
                         <div id="content-wrapper">
 
-                            <!--
-                            <?php print render($title_prefix); ?>
-                            <?php if ($title):?>
-                            <h1 class="page-title"><?php print $title; ?></h1>
-                            <?php endif; ?>
-                            <?php print render($title_suffix); ?>
-                      
-                            <!-- #tabs --
-                            <?php if ($tabs):?>
-                                <div class="tabs">
-                                <?php print render($tabs); ?>
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                <div class="google-map">
+                                <a href="#map" class="map-toggle expand"><span class="show">Show Map</span><span class="hide">Hide Map</span></a>
+                                <div id="map">
+                                <iframe width="100%" height="100%" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Google,+Amphitheatre+Parkway,+Mountain+View,+CA,+United+States&amp;aq=3&amp;oq=GOOGLE&amp;sll=37.0625,-95.677068&amp;sspn=55.849851,135.263672&amp;ie=UTF8&amp;hq=Google,+Amphitheatre+Parkway,+Mountain+View,+CA,+United+States&amp;hnear=&amp;radius=15000&amp;t=m&amp;z=13&amp;iwloc=A&amp;cid=1017478923201951099&amp;ll=37.422114,-122.083856&amp;output=embed"></iframe>			                            </div>
                                 </div>
-                            <?php endif; ?>
-                            <!-- EOF: #tabs --
-
-                            <!-- #action links --
-                            <?php if ($action_links):?>
-                                <ul class="action-links">
-                                <?php print render($action_links); ?>
-                                </ul>
-                            <?php endif; ?>
-                            <!-- EOF: #action links --
-
-                            <?php print render($page['content']); ?>
-                            <?php print $feed_icons; ?>
-                            -->
+                                </div>
+                            </div>
 
                         </div>
                         <!-- EOF:#content-wrapper -->

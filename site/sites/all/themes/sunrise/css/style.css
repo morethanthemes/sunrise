@@ -53,14 +53,14 @@ h6 { font-size: 16px }
 
 h1.page-title { font-size: 32px; }
 
-.title-sep, #pre-header h2, #promoted h2, .sidebar h2 { 
+.title-sep, #pre-header h2, .sidebar h2 { 
     clear: both; 
     font-size: 16px; 
     margin-bottom: 40px; 
     position: relative; 
 }
 
-.title-sep:after, #pre-header h2:after, #promoted h2:after, .sidebar h2:after { 
+.title-sep:after, #pre-header h2:after, .sidebar h2:after { 
     background-color: #444; 
     content: ""; 
     display: block; 
@@ -236,17 +236,6 @@ thead tr th, thead tr td, tbody tr th, tbody tr td { padding: 8px; line-height: 
     font-size: 14px;
 }
 
-#promoted h1 {
-    font-size: 34px;
-    font-weight: 100;
-    color: #868686;
-    text-align: center;
-    margin-bottom: 40px;
-    margin-top: 40px;
-    line-height: 1;
-    align-content: center;
-}
-
 #banner-inside { padding-top: 60px; margin-bottom: 40px; }
 
 #slideshow { padding: 10px; background-color: #fcfcfc; border: 1px solid #eaeaea; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; 
@@ -264,6 +253,18 @@ display: none; }
 #bottom-content { padding: 40px 0 20px 0; }
 
 /*promoted-insied*/
+
+#promoted-inside h2 {
+    font-size: 34px;
+    font-weight: 100;
+    color: #868686;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    line-height: 1;
+    align-content: center;
+}
+
 
 #promoted-inside {
     width: 90%;
@@ -349,7 +350,7 @@ display: none; }
     cursor: pointer;
 }
 
-#promoted-inside a.post_read_more:hover {
+#main a.post_read_more:hover {
 	color:#fff;
 	-webkit-box-shadow: 0px 0px 7px rgba(0,0,0, 0.3);
 	-moz-box-shadow: 0px 0px 7px rgba(0,0,0, 0.3);
@@ -357,8 +358,13 @@ display: none; }
 	background-position: 50% 70%;
 	color: #fff;
 }
+/*main*/
 
-#promoted-inside a.map-toggle {
+#map iframe {
+	height: 100%;
+}
+
+#main div.google-map a.map-toggle {
 	-webkit-border-radius: 5px 5px 0 0px;
 	-moz-border-radius: 5px 5px 0 0px;
 	border-radius: 5px 5px 0 0px;
@@ -376,7 +382,7 @@ display: none; }
 	color: #999;
 }
 
-#promoted-inside div.google-map a.map-toggle:after {
+#main div.google-map a.map-toggle:after {
 	content: " ▾ ";
 	font-size: 20px;
 	vertical-align: middle;
@@ -384,15 +390,15 @@ display: none; }
 	margin: -2px 3px 0;
 }
 
-#promoted-inside div.google-map a.collapsed {
+#main div.google-map a.collapsed {
 	margin-bottom: -1px;
 }
 
-#promoted-inside div.google-map a.collapsed:after {
+#main div.google-map a.collapsed:after {
 	content: " ▴ ";
 }
 
-#promoted-inside div.google-map map {
+#main div.google-map map {
 	height: 300px;
 	border-top:1px solid #ccc;
 	position: relative;
@@ -400,7 +406,7 @@ display: none; }
 	display: none;
 	transition:none;
 }
-#promoted-inside div.google-map map a.map-toggle hide {
+#main div.google-map map a.map-toggle hide {
 	display: none;
 }
 
