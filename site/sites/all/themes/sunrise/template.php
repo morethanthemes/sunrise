@@ -171,3 +171,89 @@ function sunrise_form_alter(&$form, &$form_state, $form_id) {
 	 	$form['search_block_form']['#attributes'] = array('onblur' => "if (this.value == '') {this.value = '{$form_default}';}", 'onfocus' => "if (this.value == '{$form_default}') {this.value = '';}" );
 	}
 }
+
+
+/**
+ * Add Javascript for Google Map
+ */
+if (theme_get_setting('google_map_js', 'sunrise')) {
+
+	drupal_add_js('jQuery(document).ready(function($) { 
+
+    var map;
+    var myLatlng;
+    var myZoom;
+    var marker;
+	
+	});',
+	array('type' => 'inline', 'scope' => 'header')
+	);
+    
+	drupal_add_js('https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false',array('type' => 'external', 'scope' => 'header', 'group' => 'JS_THEME'));
+
+	$google_map_latitude=theme_get_setting('google_map_latitude','sunrise');
+	$google_map_longitude=theme_get_setting('google_map_longitude','sunrise');
+	$google_map_zoom=theme_get_setting('google_map_zoom','sunrise');
+	$google_map_canvas=theme_get_setting('google_map_canvas','sunrise');
+	$google_map_show=theme_get_setting('google_map_show','sunrise');
+	$google_map_hide=theme_get_setting('google_map_hide','sunrise');
+	
+	drupal_add_js('jQuery(document).ready(function($) { 
+
+	if ($("#'.$google_map_canvas.'").length) {
+	
+		myLatlng = new google.maps.LatLng('.$google_map_latitude.', '.$google_map_longitude.');
+		myZoom = '.$google_map_zoom.';
+		
+		function initialize() {
+		
+			var mapOptions = {
+			zoom: myZoom,
+			mapTypeId: google.maps.MapTypeId.ROADMAP,
+			center: myLatlng,
+            scrollwheel: false
+			};
+			
+			map = new google.maps.Map(document.getElementById("'.$google_map_canvas.'"),mapOptions);
+			
+			marker = new google.maps.Marker({
+			map:map,
+			draggable:true,
+			position: myLatlng
+			});
+			
+			google.maps.event.addDomListener(window, "resize", function() {
+			map.setCenter(myLatlng);
+			});
+	
+		}
+	
+		google.maps.event.addDomListener(window, "load", initialize);
+		
+	}
+	
+	});',
+	array('type' => 'inline', 'scope' => 'header')
+	);
+	/**
+	 * Add Javascript
+	 */
+	drupal_add_js('
+	function hideMap(){
+	jQuery("#map-anchor").html("<a href=\"javascript:showMap()\" class=\"map-toggle expand\">'.$google_map_show.'</a>");
+	jQuery("#map-canvas").hide();
+	}
+	
+	function showMap() {
+	jQuery("#map-anchor").html("<a href=\"javascript:hideMap()\" class=\"map-toggle expand collapsed\">'.$google_map_hide.' </a>");
+	jQuery("#map-canvas").show();
+	google.maps.event.trigger(map, "resize");
+	map.setCenter(myLatlng);
+	map.setZoom(myZoom);
+	}
+	',
+	array('type' => 'inline', 'scope' => 'header'));
+	//EOF:Javascript
+	
+}
+

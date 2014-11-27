@@ -254,21 +254,11 @@
                         <?php endif; ?>
 
 
-
                         <!-- EOF:#content-wrapper -->
                         <div id="content-wrapper">
-
-
                             <div class="row">
-                                <div class="col-md-12">
-                                <div class="google-map">
-                                <a href="#map" class="map-toggle expand"><span class="show">Show Map</span><span class="hide">Hide Map</span></a>
-                                <div id="map">
-                                <iframe width="100%" height="100%" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Google,+Amphitheatre+Parkway,+Mountain+View,+CA,+United+States&amp;aq=3&amp;oq=GOOGLE&amp;sll=37.0625,-95.677068&amp;sspn=55.849851,135.263672&amp;ie=UTF8&amp;hq=Google,+Amphitheatre+Parkway,+Mountain+View,+CA,+United+States&amp;hnear=&amp;radius=15000&amp;t=m&amp;z=13&amp;iwloc=A&amp;cid=1017478923201951099&amp;ll=37.422114,-122.083856&amp;output=embed"></iframe>			                            </div>
-                                </div>
-                                </div>
+                                <div class="col-md-12"></div>
                             </div>
-
                         </div>
                         <!-- EOF:#content-wrapper -->
 
@@ -295,6 +285,21 @@
 
 </div>
 <!-- EOF:#page -->
+
+
+    
+<?php if ($page['google_map_region']):?>
+<!-- #google_map_region -->
+<div id="google_map_region" class="clearfix">
+    <?php print render($page['google_map_region']); ?>
+</div>
+<?php endif; ?>
+<!-- EOF:#google_map_region -->
+
+<!-- #map-canvas -->
+<div id="map-canvas"></div>
+<!-- EOF: #map-canvas -->
+
 
 <?php if ($page['footer_first'] || $page['footer_second'] || $page['footer_third'] || $page['footer_fourth']):?>
 <!-- #footer -->

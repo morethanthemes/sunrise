@@ -20,6 +20,7 @@ regions[highlighted] = Highlighted
 regions[promoted] = Promoted - Featured
 regions[content] = Content
 
+regions[google_map_region] = Google Map Region
 regions[sidebar_first] = Sidebar First
 regions[sidebar_second] = Sidebar Second
 regions[footer_first] = Footer First
@@ -32,3 +33,11 @@ settings[breadcrumb_display]= 1
 settings[scrolltop_display]= 1
 settings[responsive_respond]= 0
 settings[bootstrap_css_cdn]= 3.2.0
+
+settings[google_map_latitude]='40.726576'
+settings[google_map_longitude]='-74.046822'
+settings[google_map_zoom]= 13
+settings[google_map_show]= 'Show Map'
+settings[google_map_hide]= 'Hide Map'
+settings[google_map_canvas]= 'map-canvas'
+settings[google_map_js]= 1

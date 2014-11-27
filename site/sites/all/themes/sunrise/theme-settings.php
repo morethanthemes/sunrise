@@ -84,4 +84,72 @@ function sunrise_form_system_theme_settings_alter(&$form, &$form_state) {
         '#description'   => t('IE 6-8 require a JavaScript polyfill solution to add basic support of CSS3 media queries. Note that you should enable <strong>Aggregate and compress CSS files</strong> through <em>/admin/config/development/performance</em>.'),
     );
     
+    
+    
+    
+    $form['mtt_settings']['tabs']['google_map'] = array(
+      '#type' => 'fieldset',
+      '#title' => t('Google Map'),
+      '#collapsible' => TRUE,
+      '#collapsed' => TRUE,
+  );
+  
+  $form['mtt_settings']['tabs']['google_map']['google_map_js'] = array(
+    '#type' => 'checkbox',
+    '#title' => t('Include Google Map javascript code'),
+	'#default_value' => theme_get_setting('google_map_js','sunrise'),
+  );
+
+  $form['mtt_settings']['tabs']['google_map']['google_map_latitude'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Google Map Latitude'),
+    '#description'   => t('For example 40.726576'),
+    '#default_value' => theme_get_setting('google_map_latitude','sunrise'),
+    '#size' => 5,
+    '#maxlength' => 10,
+  );  
+
+  $form['mtt_settings']['tabs']['google_map']['google_map_longitude'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Google Map Longitude'),
+    '#description'   => t('For example -74.046822'),
+    '#default_value' => theme_get_setting('google_map_longitude','sunrise'),
+    '#size' => 5,
+    '#maxlength' => 10,
+  ); 
+  
+  $form['mtt_settings']['tabs']['google_map']['google_map_zoom'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Google Map Zoom'),
+    '#description'   => t('For example 13'),
+    '#default_value' => theme_get_setting('google_map_zoom','sunrise'),
+    '#size' => 5,
+    '#maxlength' => 10,
+  ); 
+  
+  $form['mtt_settings']['tabs']['google_map']['google_map_show'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Show Map text'),
+    '#description'   => t('Define the text for showing the map to be displayed to the visitor. The default is: Show Map'),
+    '#default_value' => theme_get_setting('google_map_show','sunrise'),
+  ); 
+  
+  $form['mtt_settings']['tabs']['google_map']['google_map_hide'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Hide Map text'),
+    '#description'   => t('Define the text for hiding the map to be displayed to the visitor. The default is: Hide Map'),
+    '#default_value' => theme_get_setting('google_map_hide','sunrise'),
+  ); 
+  
+  $form['mtt_settings']['tabs']['google_map']['google_map_canvas'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Google Map Canvas Id'),
+    '#description'   => t('Set the Google Map Canvas Id. For example: map-canvas'),
+    '#default_value' => theme_get_setting('google_map_canvas','sunrise'),
+  ); 
+    
+    
+    
+    
+    
 }
