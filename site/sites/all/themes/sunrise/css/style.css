@@ -468,20 +468,15 @@ display: none; }
     padding-left: 40px;
 }	
 
+#footer p {
+    padding-left: 40px;
+
+}
 
 #footer ul li {
     list-style-type: none;
     border-bottom: none;
     margin: 15px 0;
-    
-}
-
-#footer table {
-    border: none;
-}
-
-#footer tr {
-    border-bottom: none;
 }
 
 #footer a {
