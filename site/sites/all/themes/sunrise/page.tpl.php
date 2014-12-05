@@ -98,8 +98,6 @@
 
     <!-- #main-navigation --> 
     <div id="main-navigation" class="clearfix">
-        <div class="container">
-
             <!-- #main-navigation-inside -->
             <div id="main-navigation-inside" class="clearfix">
                 <div class="row">
@@ -117,8 +115,6 @@
                 </div>
             </div>
             <!-- EOF: #main-navigation-inside -->
-
-        </div>
     </div>
     <!-- EOF: #main-navigation -->
 
