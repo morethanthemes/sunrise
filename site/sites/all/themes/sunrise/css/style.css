@@ -472,7 +472,8 @@ display: none; }
 #footer ul li {
     list-style-type: none;
     border-bottom: none;
-    line-height: 36px;
+    margin: 15px 0;
+    
 }
 
 #footer table {
