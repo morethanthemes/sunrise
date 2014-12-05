@@ -455,9 +455,24 @@ display: none; }
     color: #999;
 }
 
+#footer div.col-md-3 {
+	padding:40px 0;
+}
+
+#footer h2 {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 36px;
+    font-size: 20px;
+    color: #E54D1B;
+    margin-bottom: 40px;
+    padding-left: 40px;
+}	
+
+
 #footer ul li {
     list-style-type: none;
     border-bottom: none;
+    line-height: 36px;
 }
 
 #footer table {
@@ -468,18 +483,10 @@ display: none; }
     border-bottom: none;
 }
 
-#footer h2 {
-    font-family: 'Open Sans', sans-serif;
-    line-height: 36px;
-    font-size: 20px;
-    color: #E54D1B;
-    margin-bottom: 40px;
-}
-
 #footer a {
     font-weight: 600;
     color: #fff;
-
+    text-decoration: none;
 }
 
 /* subfooter */
