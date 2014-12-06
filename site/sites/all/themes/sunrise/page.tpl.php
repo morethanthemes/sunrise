@@ -252,9 +252,32 @@
 
                         <!-- EOF:#content-wrapper -->
                         <div id="content-wrapper">
-                            <div class="row">
-                                <div class="col-md-12"></div>
-                            </div>
+                            <?php print render($title_prefix); ?>
+                            <?php if ($title):?>
+                            <h1 class="page-title"><?php print $title; ?></h1>
+                            <?php endif; ?>
+                            <?php print render($title_suffix); ?>
+
+                            <?php print render($page['help']); ?>
+                      
+                            <!-- #tabs -->
+                            <?php if ($tabs):?>
+                                <div class="tabs">
+                                <?php print render($tabs); ?>
+                                </div>
+                            <?php endif; ?>
+                            <!-- EOF: #tabs -->
+
+                            <!-- #action links -->
+                            <?php if ($action_links):?>
+                                <ul class="action-links">
+                                <?php print render($action_links); ?>
+                                </ul>
+                            <?php endif; ?>
+                            <!-- EOF: #action links -->
+
+                            <?php print render($page['content']); ?>
+                            <?php print $feed_icons; ?>
                         </div>
                         <!-- EOF:#content-wrapper -->
 
