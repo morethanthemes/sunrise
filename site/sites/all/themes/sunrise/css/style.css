@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,greek);
 
 /* Reset unusual Firefox-on-Android default style, see https://github.com/necolas/normalize.css/issues/214*/
-@media (max-width: 991px) { .form-text, .form-textarea, .block-superfish select, .block-search .form-submit { background-image: none; } }
+@media (max-width: 991px) { .form-text, .form-textarea, .block-superfish select { background-image: none; } }
 
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 * { transition: all 0.3s ease-out; } 
@@ -501,6 +501,40 @@ display: none; }
 	color: #ccc;
 	border-bottom: 1px dotted #666;
 }
+/* submit button */
+
+input[type="submit"] {
+    margin: 20px 0;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Open Sans',Sans-Serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-shadow: 1px 1px rgba(0,0,0, .5);
+    background: #D93600 url(../images/local/bg_button.png) 50% 50% repeat-x;
+    display: block;
+    width: 200px;
+    border: 0;
+    padding: 10px 30px;
+    text-align: center;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 0px 5px rgba(0,0,0, 0.3);
+    -moz-box-shadow: 0px 0px 5px rgba(0,0,0, 0.3);
+    box-shadow: 0px 0px 5px rgba(0,0,0, 0.3);
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	color:#fff;
+	-webkit-box-shadow: 0px 0px 7px rgba(0,0,0, 0.3);
+	-moz-box-shadow: 0px 0px 7px rgba(0,0,0, 0.3);
+	box-shadow: 0px 0px 7px rgba(0,0,0, 0.3);
+	background-position: 50% 70%;
+	color: #fff;
+}
+
 
 #header-top .block, #main-navigation .block, #banner .block { padding: 0; }
 
@@ -705,7 +739,7 @@ th.active img { margin: -4px 0 0 5px; }
 .node-forum .field-type-taxonomy-term-reference { float: none; }
 
 /*forms*/
-input:focus, input[type="button"], input[type="reset"], input[type="submit"] { -webkit-transition: all 0.3s ease-in-out; 
+input:focus, input[type="button"], input[type="reset"] { -webkit-transition: all 0.3s ease-in-out; 
 -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
 
 input.form-text, textarea.form-textarea, select { background-color: #fcfcfc; border: 2px solid #eaeaea; color: #999999; font-size: 14px; padding: 14px; width: 100%; 
@@ -726,10 +760,10 @@ legend { border-bottom: none; font-size: 14px; width: auto; margin: 0;}
 input[type="radio"], input[type="checkbox"] { margin: 0px 0 3px; }
 
 /*buttons*/
-input[type="submit"], input[type="reset"], input[type="button"] { margin: 5px 5px 10px 0; background-color: #444; border: none; box-shadow: none;
+input[type="reset"], input[type="button"] { margin: 5px 5px 10px 0; background-color: #444; border: none; box-shadow: none;
 color: #fff; padding: 15px 24px; text-transform: uppercase; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; color: #ffffff; }
 
-input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover, .highlighted-block .btn:hover,.highlighted-block .btn:focus { color: #ffffff; }
+input[type="reset"]:hover, input[type="button"]:hover, .highlighted-block .btn:hover,.highlighted-block .btn:focus { color: #ffffff; }
 
 /*tabs*/
 .nav-tabs { margin: 25px 0 15px; }
@@ -766,12 +800,6 @@ ul.links li { margin: 0; }
 
 #block-search-form .form-actions:after, .sidebar-search-block .form-actions:after { 
 font-family: 'Glyphicons Halflings'; content: "\e003"; position: absolute; top:16px; left:0; z-index: 0; }
-
-#block-search-form input.form-submit, .sidebar-search-block input.form-submit { background-color: transparent;
-color: #000; position: relative; z-index: 1; height: 52px; margin: 0; padding: 10px;}
-
-#block-search-form input.form-submit:focus, .sidebar-search-block input.form-submit:focus, 
-.sidebar-search-block input.form-submit:hover { outline: none; background: transparent; }
 
 /*polls*/
 .poll .vote-form { text-align: left; }
@@ -813,9 +841,6 @@ color: #000; position: relative; z-index: 1; height: 52px; margin: 0; padding: 1
 
 .dark h3 { color: #ffffff; margin:0 0 20px 0; }
 
-.dark input[type="submit"] { font-size: 16px; font-weight: bold; margin: 10px 0; }
-
-.dark input[type="submit"]:hover { opacity: 0.90; filter: alpha(opacity=90); }
 
 .dark .small { color: #999; font-size: 13px; }
 
