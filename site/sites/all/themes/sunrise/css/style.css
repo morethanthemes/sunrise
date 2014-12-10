@@ -51,8 +51,6 @@ h5 { font-size: 18px }
 
 h6 { font-size: 16px }
 
-h1.page-title { font-size: 32px; }
-
 .title-sep, #pre-header h2, .sidebar h2 { 
     clear: both; 
     font-size: 16px; 
@@ -72,9 +70,6 @@ h1.page-title { font-size: 32px; }
 
 .title-sep .glyphicon { font-size: 13px; padding-right: 18px; }
 
-.page-node #content-wrapper h1.page-title { margin: 0; padding: 20px 40px 0 0; }
-
-.page-node.page-node- #content-wrapper h1.page-title { padding: 20px 40px 0; }
 
 /*tables*/
 table { width: 100%; margin-bottom: 20px; border: 1px solid #dfdfdf; }
@@ -287,7 +282,7 @@ display: none; }
 
 #bottom-content { padding: 40px 0 20px 0; }
 
-/*promoted-insied*/
+/*promoted-insied */
 
 #promoted-inside h2 {
     font-size: 34px;
@@ -299,7 +294,6 @@ display: none; }
     line-height: 1;
     align-content: center;
 }
-
 
 #promoted-inside {
     width: 90%;
@@ -501,8 +495,8 @@ display: none; }
 	color: #ccc;
 	border-bottom: 1px dotted #666;
 }
-/* submit button */
 
+/* submit button */
 input[type="submit"] {
     margin: 20px 0;
     color: #fff;
@@ -533,6 +527,16 @@ input[type="submit"]:hover {
 	box-shadow: 0px 0px 7px rgba(0,0,0, 0.3);
 	background-position: 50% 70%;
 	color: #fff;
+}
+
+/*page-title*/
+h1.page-title {
+    
+    text-align: left;
+    font-size: 50px;
+    font-weight: 100;
+    margin: 0 auto 50px;
+    color: #868686;
 }
 
 

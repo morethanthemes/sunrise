@@ -236,19 +236,6 @@
 
                     <!-- #main -->
                     <div id="main" class="clearfix">
-                    
-                        <?php if ($breadcrumb && theme_get_setting('breadcrumb_display')):?> 
-                        <!-- #breadcrumb -->
-                        <div id="breadcrumb" class="clearfix">
-                            <!-- #breadcrumb-inside -->
-                            <div id="breadcrumb-inside" class="clearfix">
-                            <?php print $breadcrumb; ?>
-                            </div>
-                            <!-- EOF: #breadcrumb-inside -->
-                        </div>
-                        <!-- EOF: #breadcrumb -->
-                        <?php endif; ?>
-
 
                         <!-- EOF:#content-wrapper -->
                         <div id="content-wrapper">
