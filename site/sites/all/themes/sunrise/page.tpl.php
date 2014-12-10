@@ -40,6 +40,7 @@
 <?php endif; ?>
 
 <div id="header-banner-wrapper">
+    <div id="header-wrapper">
     <!-- header -->
     <header id="header" role="banner" class="clearfix">
         <div class="container">
@@ -95,7 +96,6 @@
     </header>
     <!-- EOF: #header --> 
 
-
     <!-- #main-navigation --> 
     <div id="main-navigation" class="clearfix">
             <!-- #main-navigation-inside -->
@@ -117,25 +117,25 @@
             <!-- EOF: #main-navigation-inside -->
     </div>
     <!-- EOF: #main-navigation -->
-
-    <div class="slogan">
-        <h2>Welcome to SUNRISE PUB!</h2>
-        <p>The place you want to be with your friends</p>
-    </div>
     
+
+    </div> <!-- #header-wrapper -->
+
     <?php if ($page['banner']) : ?>
     <!-- #banner -->
     <div id="banner" class="clearfix">
         <div class="container">
-
             <!-- #banner-inside -->
+                <div class="slogan">
+                <h2>Welcome to SUNRISE PUB!</h2>
+                <p>The place you want to be with your friends</p>
+                </div>
             <!-- EOF: #banner-inside -->        
-
         </div>
     </div>
     <!-- EOF:#banner -->
     <?php endif; ?>    
-</div> <!-- /header, menu, slogan and banner wrapper -->
+</div> <!-- #header, menu, slogan and banner wrapper -->
 
 
 <!-- #page -->
