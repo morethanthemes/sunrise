@@ -231,6 +231,9 @@ thead tr th, thead tr td, tbody tr th, tbody tr td { padding: 8px; line-height: 
 }
 
 /* Responsive Grids */
+#page {
+    background-color: #ffffff; 
+}
 
 #page div.col {
     float: left;
@@ -387,6 +390,9 @@ display: none; }
 	background-position: 50% 70%;
 }
 /*main*/
+#google_map_region div.content {
+    background-color: #ffffff; 
+}
 
 #map-canvas { 
     display:none; 
@@ -438,7 +444,7 @@ display: none; }
 	content: " ▴ ";
 }
 
-/* contact-map*/
+/*contact-map*/
 #contact-map{
 	background: #fff;
 	padding-bottom:30px;
@@ -453,6 +459,42 @@ display: none; }
 #contact-map iframe{
     border:none;
     height: 100%;
+}
+
+/*contact form*/
+#form {
+    display:block;
+    padding-top: 30px;
+}
+
+label {
+    display: block;
+	font-weight: normal;
+	padding: 5px 0px;
+    color: #666666;
+    margin-bottom: 2px;
+}
+
+input.form-text, textarea.form-textarea {
+	background:#fff;
+	border: 1px solid #eee;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	padding: 2px 10px;
+}
+
+input.form-text:focus, textarea.form-textarea:focus {
+	border-color: #000;
+}
+
+textarea.form-textarea {
+	font-size:14px;
+	width: 100%;
+}
+
+.marker, .form-required {
+    color: #666666;
 }
 
 /* footer */
@@ -480,7 +522,6 @@ display: none; }
 
 #footer p {
     padding-left: 40px;
-
 }
 
 #footer ul li {
@@ -755,45 +796,6 @@ th.active img { margin: -4px 0 0 5px; }
 .node-forum .field-name-body { margin: 10px 0; }
 
 .node-forum .field-type-taxonomy-term-reference { float: none; }
-
-/*forms*/
-input:focus, input[type="button"], input[type="reset"] { -webkit-transition: all 0.3s ease-in-out; 
--moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
-
-input.form-text, textarea.form-textarea, select { 
-    background-color: #fcfcfc; 
-    border: 2px solid #eaeaea; 
-    color: #999999; 
-    font-size: 14px; 
-    padding: 14px; 
-    width: 100%; 
-    min-height: 50px; 
-    -webkit-box-shadow: none; 
-    -moz-box-shadow: none; 
-    box-shadow: none; 
-    -webkit-border-radius: 3px; 
-    -moz-border-radius: 3px; 
-    border-radius: 3px;
-} 
-
-input.form-text:focus, textarea.form-textarea:focus { 
-    background-color: #fff; 
-    outline: none; 
-    -webkit-box-shadow: none; 
-    -moz-box-shadow: none; 
-    box-shadow: none; }
-
-.search-form input.form-text { width: 70%; }
-
-.dark input.form-text { border: none; }
-
-select { -webkit-appearance: menulist; }
-
-fieldset { padding:10px; margin: 0 2px; border: 1px solid #eaeaea; }
-
-legend { border-bottom: none; font-size: 14px; width: auto; margin: 0;}
-
-input[type="radio"], input[type="checkbox"] { margin: 0px 0 3px; }
 
 /*buttons*/
 input[type="reset"], input[type="button"] { margin: 5px 5px 10px 0; background-color: #444; border: none; box-shadow: none;
