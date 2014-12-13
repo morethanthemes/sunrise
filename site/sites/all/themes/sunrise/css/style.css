@@ -160,6 +160,11 @@ thead tr th, thead tr td, tbody tr th, tbody tr td { padding: 8px; line-height: 
     background-size: cover;
     /*min-height: 200px;*/
     min-height: 193px;
+    
+    -webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: cover;         /* Generic*/
 }
 
 #header-banner-wrapper div.slogan {
@@ -188,6 +193,11 @@ thead tr th, thead tr td, tbody tr th, tbody tr td { padding: 8px; line-height: 
 }
 
 /* Navigation */
+
+.sf-menu li {
+    float: none;
+    list-style: none;
+}
 
 #main-navigation { 
     background: url(../images/local/bg_nav.png) top left repeat;
@@ -544,6 +554,7 @@ color: #ccc;
 }
 
 
+
 /* footer */
 #footer { 
     clear: both;
@@ -722,7 +733,7 @@ ul.menu li.expanded ul { padding-left: 25px; border-top: 1px dashed #ddd; margin
 }
 
 #main-navigation ul.menu ul li a, #header-top ul.menu ul li a  { padding: 15px 20px; text-transform: capitalize; font-weight: 400; font-size: 13px; border: 1px solid #eaeaea; border-top: none; line-height: 150%; }
-
+/********/
 /*superfish support*/
 .block-superfish select { -webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0; border-width: 1px; width: 90%; }
 
@@ -746,23 +757,13 @@ border-color: transparent transparent #fff transparent; height: 0px; position: a
 
 .block-superfish ul.sf-menu ul ul li a { border-left: none!important; }
 
-/*superfish menu arrows*/
-#main-navigation  .block-superfish ul.sf-menu > li > a.menuparent { padding: 20px 40px 20px 20px;  }
 
-#header-top .block-superfish ul.sf-menu > li > a.menuparent { padding: 16px 40px 16px 20px;  }
-
-.block-superfish ul.sf-menu li a.menuparent:after { content: "\e114"; font-family: 'Glyphicons Halflings'; -webkit-font-smoothing: antialiased; 
-position: absolute; top: 20px; right: 17px; font-size: 11px; font-weight: 400; }
-
-#header-top .block-superfish ul.sf-menu li a.menuparent:after { top: 17px; } 
-
-.block-superfish ul.sf-menu ul li a.menuparent:after { content: "\e080"; top: 14px; right: 10px; }
 
 /*superfish menu style resets*/
 .sf-menu.sf-horizontal.sf-shadow ul { background: #ffffff; padding: inherit!important; -webkit-border-top-right-radius: 0; -webkit-border-bottom-left-radius: 0;
 -moz-border-radius-topright: 0; -moz-border-radius-bottomleft: 0; border-top-right-radius: 0; border-bottom-left-radius: 0; }
 
-
+/*********/
 /*pre-header menu, bottom-content*/
 #pre-header ul.menu li a.active, #pre-header ul.menu li a:hover, 
 #bottom-content ul.menu li a.active, #bottom-content ul.menu li a:hover { color: #fafafa }
