@@ -230,7 +230,10 @@ thead tr th, thead tr td, tbody tr th, tbody tr td { padding: 8px; line-height: 
 	padding: 21px 5px;
 	color: #ddd;
 	text-decoration: none;
-	transition:none;    
+	transition:none;        
+    text-transform: uppercase; 
+    font-weight: 700; 
+    padding: 0px 20px 0px 20px; 
 }
 
 #main-navigation-inside ul.menu li a span {
@@ -242,6 +245,44 @@ thead tr th, thead tr td, tbody tr th, tbody tr td { padding: 8px; line-height: 
 #main-navigation-inside ul.menu li a:hover, #main-navigation-inside ul.menu li.current-menu-item a, #main-navigation-inside ul.menu li.current_page_item a {
 	color: #fff;
 }
+
+/* sub-menu */
+
+#main-navigation-inside ul.sf-menu ul { 
+    position: absolute;
+	background: url(../images/local/bg_nav.png) top left repeat;
+    margin-top: 4px;
+	margin-left: -15px;
+	width: 250px;
+	text-align: left;
+    z-index:999;
+    padding:0;
+}
+
+#main-navigation-inside ul.sf-menu ul li { 
+    line-height: 26px;
+	display: block;
+	padding: 0px;
+    font-weight: 400;
+    padding:0;
+    margin:0;
+    text-transform: uppercase;
+}
+
+#main-navigation-inside ul.sf-menu ul li a { 
+	color: #ffffff !important;
+	font-size: 14px;
+	font-weight:600;
+	padding: 10px 10px;
+	display: block;
+    text-shadow: none;
+}
+
+#main-navigation-inside ul.menu ul li a:hover {
+	background: #333;
+	color: #ffffff;
+}
+
 
 /* Responsive Grids */
 #page {
@@ -724,40 +765,6 @@ ul.menu li.expanded ul { padding-left: 25px; border-top: 1px dashed #ddd; margin
 
 /*header-top menu*/
 #header-top ul.menu li a { font-size: 13px; text-transform: capitalize;  padding: 16px 20px 16px; }
-
-/*main-navigation*/
-#main-navigation ul.menu li a { 
-    text-transform: uppercase; 
-    font-weight: 700; 
-    padding: 0px 20px 0px 20px; 
-}
-
-#main-navigation ul.menu ul li a, #header-top ul.menu ul li a  { padding: 15px 20px; text-transform: capitalize; font-weight: 400; font-size: 13px; border: 1px solid #eaeaea; border-top: none; line-height: 150%; }
-/********/
-/*superfish support*/
-.block-superfish select { -webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0; border-width: 1px; width: 90%; }
-
-#main-navigation .block-superfish select { border-top: none; border-bottom: none; width: 100%; } 
-
-.block-superfish ul.sf-menu { padding: 0; margin: 0; }
-
-.block-superfish ul.sf-menu ul { border-top: 1px solid #eaeaea; top:100%; background: #ffffff; padding: 0; -webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0;
--webkit-box-shadow: 0 10px 0 -5px rgba(0,0,0,0.05); -moz-box-shadow: 0 10px 0 -5px rgba(0,0,0,0.05); 
--ms-box-shadow: 0 10px 0 -5px rgba(0,0,0,0.05); -o-box-shadow: 0 10px 0 -5px rgba(0,0,0,0.05); box-shadow: 0 10px 0 -5px rgba(0,0,0,0.05); display: none;}
-
-.block-superfish ul.sf-menu ul li a { display: block; }
-
-.block-superfish ul.sf-menu > li > ul:before,
-.block-superfish ul.sf-menu > li > ul:after { content: ""; border-style: solid; border-width: 0 9px 9px 9px; 
-border-color: transparent transparent #fff transparent; height: 0px; position: absolute; left: 15px; top: -9px; width: 0px; }
-
-.block-superfish ul.sf-menu > li > ul:after { border-color: transparent transparent #eaeaea transparent; top: -10px; z-index: -1; }
-
-.block-superfish ul.sf-menu ul ul { top:-1px; }
-
-.block-superfish ul.sf-menu ul ul li a { border-left: none!important; }
-
-
 
 /*superfish menu style resets*/
 .sf-menu.sf-horizontal.sf-shadow ul { background: #ffffff; padding: inherit!important; -webkit-border-top-right-radius: 0; -webkit-border-bottom-left-radius: 0;
