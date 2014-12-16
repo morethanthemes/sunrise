@@ -30,22 +30,59 @@ img { display: block; height: auto; max-width: 100%; }
 
 #bottom-content { color: #ffffff; }
 
-::-moz-selection { color: #ffffff; }
+/* selections */
+::-moz-selection { 
+    background: rgb(255,255,158);
+}
 
-::selection { color: #ffffff; }
+::selection { 
+    background: rgb(255,255,158);
+}
+
+img::selection { 
+    background: transparent;
+}
+
+img::-moz-selection	{ 
+    background: transparent;
+}
+
+body {
+    -webkit-tap-highlight-color: rgb(255,255,158);
+}
+
 
 /*Heading*/
-h1, h2, h3, h4, h5, h6 { font-weight: 700; line-height: 120%; padding: 0; margin: 20px 0 10px 0; font-family: 'Open Sans', sans-serif; }
+h1, h2, h3, h4, h5, h6 { 
+    font-weight: 700; 
+    line-height: 120%; 
+    padding: 0; 
+    margin: 20px 0 10px 0; 
+    font-family: 'Open Sans', sans-serif; 
+}
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: #444; }
 
-h1 { font-size: 36px }
+h1 { 
+	font-size: 68px;
+	line-height: 48px;
+	letter-spacing: -1px;
+}
 
-h2 { font-size: 30px }
+h2 { 
+	font-size: 42px;
+	line-height: 1;
+}
 
-h3 { font-size: 24px }
+h3 { 
+ 	font-size: 26px;
+	line-height: 36px;
+}
 
-h4 { font-size: 20px }
+h4 { 
+	font-size: 22px;
+	line-height: 30px;
+}
 
 h5 { font-size: 18px }
 

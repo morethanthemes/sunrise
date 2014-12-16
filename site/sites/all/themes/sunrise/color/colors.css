@@ -11,8 +11,12 @@ a, a:hover, a:focus, ul.menu li a.active, ul.menu li a:hover, #forum thead a:hov
 input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover, .dark input[type="submit"],
 .highlighted-block .btn:hover, .highlighted-block .btn:focus, .call-to-action .btn, .tag a:hover { background-color: #E74C3C; }
 
-::-moz-selection { background-color: #E74C3C; }
+::-moz-selection { 
+    background: rgb(255,255,158);
+}
 
-::selection { background-color: #E74C3C; }
+::selection { 
+    background: rgb(255,255,158);
+}
 
 input.form-text:focus, textarea.form-textarea:focus {  border-color: #E74C3C; }
