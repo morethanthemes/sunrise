@@ -95,7 +95,7 @@ h6 { font-size: 16px }
 
 .title-sep, #pre-header h2, .sidebar h2 { 
     clear: both; 
-    margin-bottom: 40px; 
+    margin-bottom: 20px; 
     position: relative;
     color: #666666;
     font-weight: bold;
@@ -613,6 +613,10 @@ textarea.form-textarea {
     text-decoration: none;
 }
 
+#block-system-main a:focus {
+    color: #666666;
+}
+
 /* tags */
 
 .field-name-field-tagss {
@@ -750,7 +754,11 @@ ol li { list-style-type: decimal; }
 #header ul { text-align: left; }
 
 /*item lists*/
-.item-list ul li { border-bottom: 1px dashed #ddd; margin-bottom: 0; padding: 15px 0; }
+/*.item-list ul li { 
+    border-bottom: 1px dashed #ddd; 
+    margin-bottom: 0; 
+    padding: 15px 0; 
+}*/
 
 #block-user-login .item-list ul li { 
     border-bottom: none; 

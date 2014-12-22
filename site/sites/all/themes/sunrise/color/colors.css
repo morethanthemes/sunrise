@@ -6,7 +6,9 @@ body, .comment { background-color: #f5f5f5; }
 
 #header-top, .toggle-control {border-top: 5px solid #222222;}
 
-a, a:hover, a:focus, ul.menu li a.active, ul.menu li a:hover, #forum thead a:hover, #block-node-recent .node-title a:hover { color: #E74C3C; }
+a, a:hover, a:focus, ul.menu li a.active, ul.menu li a:hover, #forum thead a:hover, #block-node-recent .node-title a:hover { 
+    color: #E74C3C; 
+}
 
 input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover, .dark input[type="submit"],
 .highlighted-block .btn:hover, .highlighted-block .btn:focus, .call-to-action .btn, .tag a:hover { background-color: #E74C3C; }
