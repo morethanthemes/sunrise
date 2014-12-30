@@ -636,7 +636,6 @@ textarea.form-textarea {
 }
 
 
-
 /* footer */
 #footer { 
     clear: both;
@@ -860,7 +859,14 @@ ul.menu li.expanded ul { padding-left: 25px; border-top: 1px dashed #ddd; margin
 .submitted .glyphicon { top: 0; }
 
 /*comments*/
+
 #comments { background: #ffffff; }
+
+#comments h2 {
+    font-size: 22px;
+    line-height: 1;
+}
+
 
 .comment { border: 2px solid #fff; padding: 32px; margin-top:25px;} 
 
