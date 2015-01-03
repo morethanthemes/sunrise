@@ -1,7 +1,16 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,greek);
 
 /* Reset unusual Firefox-on-Android default style, see https://github.com/necolas/normalize.css/issues/214*/
-@media (max-width: 991px) { .form-text, .form-textarea, .block-superfish select { background-image: none; } }
+@media (max-width: 991px) { .form-text, .form-textarea, .block-superfish select { 
+    background-image: none; 
+    display: inline-block;
+    width:100%;
+    border: 1px solid #ccc;
+    color: #666;
+    padding: 5px;
+    font-size: 12px;
+} 
+}
 
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 * { transition: all 0.3s ease-out; } 
@@ -186,6 +195,14 @@ thead tr th, thead tr td, tbody tr th, tbody tr td { padding: 8px; line-height: 
 #header div.social ul.social li a.skype {
     background-position: -304px 0;
 }
+main-navigation .block-superfish select {
+    border-top: none;
+    border-bottom: none;
+    width: 100%;
+}
+
+#main-navigation .block-superfish  { padding: 20px; }
+
 
 /* header-banner-wrapper */
 
@@ -249,6 +266,12 @@ thead tr th, thead tr td, tbody tr th, tbody tr td { padding: 8px; line-height: 
     padding: 0;
     line-height: 36px;
     text-align: center;
+    font-family: 'Cabin Condensed', Arial, sans-serif;
+}
+@media (max-width: 991px) {
+#main-navigation-inside {
+        padding: 20px;
+    }    
 }
 
 #main-navigation-inside ul.menu  {
@@ -738,6 +761,7 @@ h1.page-title {
 
 #header-top .block, #main-navigation .block, #banner .block { padding: 0; }
 
+
 /*glyphicon-block*/
 .glyphicon-block {text-align: center; }
 
@@ -812,6 +836,8 @@ ul.menu li.expanded ul { padding-left: 25px; border-top: 1px dashed #ddd; margin
 
 /*header-top menu*/
 #header-top ul.menu li a { font-size: 13px; text-transform: capitalize;  padding: 16px 20px 16px; }
+
+
 
 /*superfish menu style resets*/
 .sf-menu.sf-horizontal.sf-shadow ul { background: #ffffff; padding: inherit!important; -webkit-border-top-right-radius: 0; -webkit-border-bottom-left-radius: 0;
