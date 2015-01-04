@@ -450,7 +450,7 @@ display: none; }
 	font-weight: 100;
 }
 
-#promoted-inside a.post_read_more {
+#promoted-inside a.post_read_more, input[type="submit"], .comment ul.links.inline li a {
     margin: 20px auto;
     color: #fff;
     text-transform: uppercase;
@@ -473,13 +473,14 @@ display: none; }
     cursor: pointer;
 }
 
-#main a.post_read_more:hover {
+#promoted-inside a.post_read_more:hover {
 	color:#fff;
 	-webkit-box-shadow: 0px 0px 7px rgba(0,0,0, 0.3);
 	-moz-box-shadow: 0px 0px 7px rgba(0,0,0, 0.3);
 	box-shadow: 0px 0px 7px rgba(0,0,0, 0.3);
 	background-position: 50% 70%;
 }
+
 /*main*/
 #google_map_region div.content {
     background-color: #ffffff; 
@@ -614,11 +615,11 @@ div.submitted span{
 
 /* blog title */
 #block-system-main a {
-    color: #E54D1B;
     text-decoration: none;
 }
 
 #block-system-main h2 a {
+    color: #E54D1B;
     text-align: left;
     font-size: 50px;
     font-weight: 100;
@@ -707,25 +708,6 @@ div.submitted span{
 /* submit button */
 input[type="submit"] {
     margin: 20px 0;
-    color: #fff;
-    text-transform: uppercase;
-    font-family: 'Open Sans',Sans-Serif;
-    font-size: 16px;
-    font-weight: bold;
-    text-shadow: 1px 1px rgba(0,0,0, .5);
-    background: #D93600 url(../images/local/bg_button.png) 50% 50% repeat-x;
-    display: block;
-    width: 200px;
-    border: 0;
-    padding: 10px 30px;
-    text-align: center;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    -webkit-box-shadow: 0px 0px 5px rgba(0,0,0, 0.3);
-    -moz-box-shadow: 0px 0px 5px rgba(0,0,0, 0.3);
-    box-shadow: 0px 0px 5px rgba(0,0,0, 0.3);
-    cursor: pointer;
 }
 
 input[type="submit"]:hover {
@@ -872,15 +854,65 @@ ul.menu li.expanded ul { padding-left: 25px; border-top: 1px dashed #ddd; margin
 
 /*comments*/
 
-#comments { background: #ffffff; }
-
-#comments h2 {
-    font-size: 22px;
-    line-height: 1;
+.indented {
+    margin-left: 70px;
 }
 
+#comments h2.title {
+    font-size: 22px;
+    line-height: 1; 
+    border-bottom: 2px solid #DDDDDD;
+    display: block;
+    margin-top: 30px;
+    padding-bottom: 10px;
+    width: 100%;
+}
 
-.comment { border: 2px solid #fff; padding: 32px; margin-top:25px;} 
+#comments h2.comment-form {
+    border-bottom: none;
+}
+
+#comments h3 a { 
+    display: none; /*removes comment title*/
+}
+
+.comment { 
+    padding: 8px 0;
+    border-bottom: 1px solid #e3e3e3;
+} 
+
+.comment span.username {
+    font-weight: 700;
+}
+
+.comment p {
+    padding-left: 65px;
+    margin: 15px 0;
+}
+
+.comment ul.links.inline {
+    padding-left: 60px;
+}
+
+.comment ul.links.inline li a {
+    color:#fff;
+    min-width: 0;
+    padding: 5px 10px;
+    font-size: 10px;
+    width: auto;
+    display: inline-block;
+    opacity: 0.5;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.comment ul.links.inline li a:hover {
+    opacity: 1;
+}
+
 
 .comment header { padding: 0; }
 
