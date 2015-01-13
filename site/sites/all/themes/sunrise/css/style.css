@@ -774,6 +774,14 @@ article.node.node-blog a:focus {
     color: #666666;
 }
 
+article.node.node-blog header div.user-picture { 
+    display:none;
+}
+
+article.node.node-blog article.comment header div.user-picture { 
+    display:block;
+}
+
 /* tags */
 
 .field-name-field-tagss {
