@@ -462,7 +462,8 @@ display: none; }
 		margin-bottom: 40px;
 	}
 
-    article.node.node-article.contextual-links-region.clearfix #menulist .level-2 {
+    #block-system-main div.view.view-our-menu #menulist .level-2 {
+/*    article.node.node-article.contextual-links-region.clearfix #menulist .level-2 {*/
         font-size: 18px;
         display: block;
     }
