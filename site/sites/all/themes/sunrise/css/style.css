@@ -434,7 +434,7 @@ display: none; }
 		color: #E54D1B;
 	}
 
-    #menulist .menu-title,  article.node.node-article a {
+    #menulist .menu-title, #block-system-main div.view.view-our-menu a {
 		text-align: center;
 		font-weight: 600;
 		font-size: 22px;
@@ -463,7 +463,6 @@ display: none; }
 	}
 
     #block-system-main div.view.view-our-menu #menulist .level-2 {
-/*    article.node.node-article.contextual-links-region.clearfix #menulist .level-2 {*/
         font-size: 18px;
         display: block;
     }
