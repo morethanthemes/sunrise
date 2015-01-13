@@ -758,6 +758,10 @@ div.submitted span {
 }
 
 /* blog title */
+.node-blog h2 {
+    margin: 0 auto 50px;
+}
+
 #block-system-main a {
     text-decoration: none;
 }
