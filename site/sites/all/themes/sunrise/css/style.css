@@ -884,6 +884,11 @@ h1.page-title {
 
 #header-top .block, #main-navigation .block, #banner .block { padding: 0; }
 
+/*glyphicon-calendar*/
+.glyphicon {
+    display: none;
+}
+
 /*glyphicon-block*/
 .glyphicon-block {text-align: center; }
 
@@ -899,11 +904,6 @@ ol li { list-style-type: decimal; }
 #header ul { text-align: left; }
 
 /*item lists*/
-/*.item-list ul li { 
-    border-bottom: 1px dashed #ddd; 
-    margin-bottom: 0; 
-    padding: 15px 0; 
-}*/
 
 #block-user-login .item-list ul li { 
     border-bottom: none; 
