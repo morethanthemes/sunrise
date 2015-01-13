@@ -379,9 +379,12 @@ display: none; }
 
 /*menu list*/
 
-    article.node-article div.submitted, article.node-article footer {
-        display: none;
-    
+    article.node-article footer, 
+    #node-24 div.submitted, 
+    #node-26 div.submitted,
+    #node-27 div.submitted, 
+    #node-28 div.submitted {
+        display: none;   
     }
 
     #menulist div.menu-item {
@@ -778,11 +781,13 @@ article.node.node-blog a:focus {
     color: #666666;
 }
 
-article.node.node-blog header div.user-picture { 
+article.node.node-blog header div.user-picture,
+article.node.node-article header div.user-picture { 
     display:none;
 }
 
-article.node.node-blog article.comment header div.user-picture { 
+article.node.node-blog article.comment header div.user-picture,
+article.node.node-article article.comment header div.user-picture { 
     display:block;
 }
 
