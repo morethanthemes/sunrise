@@ -494,9 +494,8 @@ display: none; }
 .gallery dl {
 	margin: 0;
 }
+
 .gallery-icon {
-    width: 200px;
-    height: 200px;
 	padding: 10px;
 }
 .gallery img {
