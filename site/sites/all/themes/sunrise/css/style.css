@@ -484,6 +484,12 @@ display: none; }
 
 /* gallery */
 
+#main p {
+    color:#666666;	
+    font-size:14px;
+	padding-bottom: 20px;
+}
+
 #gallery-1 .gallery-item {
     float: left;
     margin-top: 10px;
