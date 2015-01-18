@@ -9,7 +9,10 @@
 
 body { color: #444; font-family: 'Open Sans', sans-serif; font-size: 14px; line-height: 160%; }
 
-p { margin: 0 0 25px; padding: 0; }
+p { 
+    margin: 0 0 0; 
+    padding: 0; 
+}
 
 a { -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; 
 -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
@@ -192,6 +195,11 @@ thead tr th, thead tr td, tbody tr th, tbody tr td { padding: 8px; line-height: 
     overflow-x:hidden;
 }
 
+body.html.front #header-banner-wrapper {
+    height:100vh;
+    min-height: 600px;
+}
+
 #header-banner-wrapper {    
     background: #333;
     background-image: url(../images/local/sunrise_background1.jpg);
@@ -204,24 +212,6 @@ thead tr th, thead tr td, tbody tr th, tbody tr td { padding: 8px; line-height: 
     -o-background-size: cover;      /* Opera*/
     background-size: cover;         /* Generic*/
 }
-
-body.html.front #header-banner-wrapper {
-    height:100vh;
-}
-/*
-#header-banner-wrapper {    
-    background: #333;
-    background-image: url(../images/local/sunrise_background1.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    /*min-height: 200px;*
-    min-height: 193px;
-    
-    -webkit-background-size: cover; /* For WebKit*
-    -moz-background-size: cover;    /* Mozilla*
-    -o-background-size: cover;      /* Opera*
-    background-size: cover;         /* Generic*
-}*/
 
 #header-banner-wrapper div.slogan {
     min-width: 768px;
@@ -342,6 +332,10 @@ body.html.front #header-banner-wrapper {
 
 
 /* Responsive Grids */
+div.field-item img {
+    width:100%;
+}
+
 #page {
     background-color: #ffffff; 
 }
@@ -767,8 +761,12 @@ textarea.form-textarea {
 /* blog */
 
 div.submitted span {
-    margin: 20px 0;
+    margin: 20px 40px;
     color: #ccc;
+}
+
+.node footer {
+    display: none;
 }
 
 /* sidebar second */
@@ -794,12 +792,25 @@ div.submitted span {
     text-decoration: none;
 }
 
-article.node.node-blog header h2 a {
+article.node.node-blog header h2 a, 
+#block-system-main div.header2 h2 a {
     color: #E54D1B;
     text-align: left;
     font-size: 50px;
     font-weight: 100;
     margin: 0 auto 50px;
+}
+
+#block-system-main header  {
+    padding: 0 0 0;
+}
+
+body.page-node-14 h1.page-title,
+body.page-node-15 h1.page-title,
+body.page-node-16 h1.page-title,
+body.page-node-17 h1.page-title,
+article.node-blog header h2 a {
+    display:none;
 }
 
 article.node.node-blog a:focus {
