@@ -194,6 +194,7 @@ thead tr th, thead tr td, tbody tr th, tbody tr td { padding: 8px; line-height: 
     background: url(../images/local/sunrise_background1.jpg) no-repeat center center fixed #333;
     background-attachment: fixed;
     min-height: 193px;
+    overflow-x:hidden;
     
     -webkit-background-size: cover; /* For WebKit*/
     -moz-background-size: cover;    /* Mozilla*/
