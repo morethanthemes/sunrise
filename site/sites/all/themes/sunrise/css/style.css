@@ -188,13 +188,16 @@ thead tr th, thead tr td, tbody tr th, tbody tr td { padding: 8px; line-height: 
 }
 
 /* header-banner-wrapper */
-
+.html {
+    overflow-x:hidden;
+}
 
 #header-banner-wrapper {    
-    background: url(../images/local/sunrise_background1.jpg) no-repeat center center fixed #333;
+    background: #333;
+    background-image: url(../images/local/sunrise_background1.jpg);
     background-attachment: fixed;
+    background-size: cover;
     min-height: 193px;
-    overflow-x:hidden;
     
     -webkit-background-size: cover; /* For WebKit*/
     -moz-background-size: cover;    /* Mozilla*/
@@ -205,6 +208,20 @@ thead tr th, thead tr td, tbody tr th, tbody tr td { padding: 8px; line-height: 
 body.html.front #header-banner-wrapper {
     height:100vh;
 }
+/*
+#header-banner-wrapper {    
+    background: #333;
+    background-image: url(../images/local/sunrise_background1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    /*min-height: 200px;*
+    min-height: 193px;
+    
+    -webkit-background-size: cover; /* For WebKit*
+    -moz-background-size: cover;    /* Mozilla*
+    -o-background-size: cover;      /* Opera*
+    background-size: cover;         /* Generic*
+}*/
 
 #header-banner-wrapper div.slogan {
     min-width: 768px;
