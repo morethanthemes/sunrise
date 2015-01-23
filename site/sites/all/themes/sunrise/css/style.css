@@ -759,8 +759,13 @@ textarea.form-textarea {
 
 /* blog */
 
+header div.submitted span span.username{ 
+    color: #ccc;
+    margin-left: 0px;
+}
+
 div.submitted span {
-    margin: 20px 40px;
+    margin-left: 40px;
     color: #ccc;
 }
 
@@ -1060,6 +1065,7 @@ ul.menu li.expanded ul { padding-left: 25px; border-top: 1px dashed #ddd; margin
     border-bottom: 2px solid #DDDDDD;
     display: block;
     margin-top: 30px;
+    margin-bottom:10px;
     padding-bottom: 10px;
     width: 100%;
 }
@@ -1081,13 +1087,14 @@ ul.menu li.expanded ul { padding-left: 25px; border-top: 1px dashed #ddd; margin
     font-weight: 700;
 }
 
-.comment p {
+#comments .comment p {
     padding-left: 65px;
     margin: 15px 0;
+    padding-bottom: 0px;
 }
 
-.comment ul.links.inline {
-    padding-left: 60px;
+.comment ul.inline li {
+    padding-left: 65px;
 }
 
 .comment ul.links.inline li a {
@@ -1124,7 +1131,10 @@ ul.menu li.expanded ul { padding-left: 25px; border-top: 1px dashed #ddd; margin
 
 .comment h3 a:hover { text-decoration: none; }
 
-.comment .user-picture { float: left; margin: 0 15px 25px 0; }
+.comment .user-picture { 
+    float: left; 
+    margin: 0 15px 1px 0; 
+}
 
 .comment .new { margin: 10px 0; display: inline-block; }
 
