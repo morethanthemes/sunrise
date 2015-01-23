@@ -150,34 +150,7 @@
             <div id="top-content-inside" class="clearfix">
                 <div class="row">
                     <div class="col-md-12">
-                   <!--TODO: <?php print render($page['highlighted']); ?> -->
-                        
-                    <div class="grid4">
-                        
-                        <div class="col">
-                            <img src="<?php print base_path().drupal_get_path('theme', 'sunrise') ;?>/images/local/ico_coffee.png" alt="" />
-                            <h3>Imported coffee</h3>
-                            <p>Checkout our various tyes of imported coffee.</p> 				
-                        </div>
-
-                        <div class="col">
-                            <img src="<?php print base_path().drupal_get_path('theme', 'sunrise') ;?>/images/local/ico_music.png" alt="" />
-                            <h3>Great Music </h3>
-                            <p>Our DJs will entertain you like never before.</p> 				
-                        </div>
-
-                        <div class="col">
-                            <img src="<?php print base_path().drupal_get_path('theme', 'sunrise') ;?>/images/local/ico_food.png" alt="" />
-                            <h3>Finest Cuisine</h3>
-                            <p>From Italian to Tex-Mex, you will find all types of food</p>				
-                        </div>
-
-                        <div class="col">
-                            <img src="<?php print base_path().drupal_get_path('theme', 'sunrise') ;?>/images/local/ico_service.png" alt="" />
-	                        <h3>Nice Staff</h3>
-                            <p>You will never forget our smile and professional attitude.</p>				
-                        </div>
-                    </div>
+                   <?php print render($page['highlighted']); ?>
 
                     </div>
                 </div>

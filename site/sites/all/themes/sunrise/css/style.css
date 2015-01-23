@@ -340,49 +340,48 @@ div.field-item img {
     background-color: #ffffff; 
 }
 
-#page div.col {
-    float: left;
-    margin-left: 3.2%;
+/*highlighted*/
+
+.region-highlighted {
+    padding: 20px 0;
 }
 
-/* grid4 col */
-#page div.grid4 div.col {
-    width: 22.6%;
+#top-content div.col-md-3 {
     text-align: center;
 }
 
-#page div.grid4 div.col:nth-of-type(4n+1) {
+#top-content  div.col-md-3:nth-of-type(4n+1) {
     margin-left: 0;
     clear: left;
 }
 
-#page div.grid4 div.col img {
+#top-content  div.col-md-3 img {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-#page div.grid4 div.col h3 {
+#top-content  div.col-md-3 h3 {
     font-size: 16px;
     color: #000;
     font-family: 'Open Sans',Sans-Serif;
 }
 
-#page div.grid4 div.col p {
+#top-content div.col-md-3 p {
     color: #666666;
     font-family: 'Open Sans',Sans-Serif;
     font-size: 14px;
+}
+
+#top-content { 
+    background-image: url(../images/local/bg_diamond.png);
+    padding: 20px 0;
 }
 
 #banner-inside { padding-top: 60px; margin-bottom: 40px; }
 
 #slideshow { padding: 10px; background-color: #fcfcfc; border: 1px solid #eaeaea; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; 
 display: none; }
-
-#top-content { 
-    background-image: url(../images/local/bg_diamond.png);
-    padding: 20px 0;
-}
 
 #main-content { padding: 60px 0 30px 0; }
 
