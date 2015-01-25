@@ -79,7 +79,6 @@
                 </div>
             </div>
             <!-- EOF: #header-inside -->
-
         </div>
         
     </header>
@@ -106,28 +105,20 @@
             </div>
             <!-- EOF: #main-navigation-inside -->
     </div>
-    <!-- EOF: #main-navigation -->
+    <!-- EOF: #main-navigation -->    
     
-
-    <!-- #social --> 
-    <div id="social_sm" class="clearfix" display="hidden">
-        
-            <!-- #main-navigation-inside -->
-            <div id="social" class="clearfix">
-                <div class="row">
-                    <div class="col-md-12">
-                            <?php if ($page['social']) :?>
-                            <?php print drupal_render($page['social']); ?>
-                            <?php endif; ?>
-                    </div>
+    <div id="social2" class="clearfix" >
+    <div class="container">
+            <div class="row">
+                <div class="col-md-12">                 
+                    <?php if ($page['social']) :?>
+                            <?php print render($page['social']); ?>
+                    <?php endif; ?>
                 </div>
-            </div>
-            <!-- EOF: #main-navigation-inside -->
+                </div>
+        </div>
     </div>
-    <!-- EOF: #social -->
         
-        
-
         
     </div> <!-- #header-wrapper -->
 

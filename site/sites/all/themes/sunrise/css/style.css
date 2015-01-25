@@ -150,9 +150,11 @@ div.social ul.social li{
     font-size: 14px;
     color: #6B6B6B;
 }
-
-div.social ul.social li a{
+div.social ul.social li a {
     float: left;
+}
+
+div.social ul.social li a {
     width: 36px;
     height: 36px;
     margin-top: 0px;
@@ -165,29 +167,53 @@ div.social ul.social li a:hover {
     opacity: 0.9;
 }
 
-div.social ul.social li a.twitter {
+div.social ul.social li a.twitter, #social2 .social a.twitter {
     background-position: 0px 0;
 }
-div.social ul.social li a.facebook {
+div.social ul.social li a.facebook, #social2 .social a.facebook {
     background-position: -61px 0;
 }
-div.social ul.social li a.gplus {
+div.social ul.social li a.gplus, #social2 .social a.gplus {
     background-position: -121px 0;
 }
-div.social ul.social li a.youtube {
+div.social ul.social li a.youtube, #social2 .social a.youtube {
     background-position: -177px 0;
 }
-div.social ul.social li a.rss {
+div.social ul.social li a.rss, #social2 .social a.rss {
     background-position: -242px 0;
 }
-div.social ul.social li a.skype {
+div.social ul.social li a.skype, #social2 .social a.skype {
     background-position: -304px 0;
 }
 
-/*
-#social_sm div.social {
-    align-content: center;
-}*/
+#social2 div.social {
+    text-align: center;
+    float: none;
+    display: none;
+}
+
+#social2 .social br {
+    display: none;
+}
+
+#social2 .social a {
+    padding: 0 0 0 43px;
+    padding-bottom: 36px;
+    background: url(../images/local/social.png) no-repeat;
+    opacity: 0.5;    
+}
+
+@media only screen and (max-width: 767px) {
+    div.social {
+        display: none;
+    }
+    #social2 div.social {
+        text-align: center;
+        float: none;
+        display: block;
+    }
+}
+
 
 /* header-banner-wrapper */
 .html {
