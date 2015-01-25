@@ -29,8 +29,6 @@ blockquote p { font-size: 14px; line-height: 160%; font-weight: 400; }
 
 img { display: block; height: auto; max-width: 100%; }
 
-#pre-header { color:#aaaaaa; }
-
 #bottom-content { color: #ffffff; }
 
 /* selections */
@@ -96,7 +94,7 @@ h5 { font-size: 18px }
 
 h6 { font-size: 16px }
 
-.title-sep, #pre-header h2, .sidebar h2 { 
+.title-sep, .sidebar h2 { 
     clear: both; 
     margin-bottom: 20px; 
     position: relative;
@@ -119,17 +117,7 @@ table tr.even, table tr.odd, th { background-color: transparent; border-bottom: 
 
 thead tr th, thead tr td, tbody tr th, tbody tr td { padding: 8px; line-height: 142%; vertical-align: top; }
 
-/*Layout*/
-#pre-header { top: 0; left: 0; width: 100%; z-index: 13; position: absolute; background-color: #333; }
-
-.logged-in #pre-header { padding-top: 64px; }
-
-#pre-header-inside { display: none; position: relative; z-index: 13; padding: 40px 0 0 0; }
-
-#header-top { background-color: #fcfcfc; border-bottom: 1px dashed #eaeaea; position: relative; z-index: 12; min-height: 50px; } 
-
-/* header */
-
+/*header*/
 #header { 
     margin: 0 auto;
 	padding:30px 0 0;
@@ -138,18 +126,24 @@ thead tr th, thead tr td, tbody tr th, tbody tr td { padding: 8px; line-height: 
 	position: relative;
 }
 
-#header div.social {
-    margin: 0;
-    position: absolute;
-    right: 10px;
-    top: 10px;
+body.html.front #header {
+    padding:0 0 0;
 }
 
-#header div.social ul.social{
+/*social*/
+div.social {
+    margin: 0;
+    /*position: absolute;*/
+    right: 10px;
+    top: 10px;
+    float:right;
+}
+
+div.social ul.social{
     list-style: none;
 }
 
-#header div.social ul.social li{
+div.social ul.social li{
     list-style: none;
     padding: 0 0 0 5px;
     float: left;
@@ -157,7 +151,7 @@ thead tr th, thead tr td, tbody tr th, tbody tr td { padding: 8px; line-height: 
     color: #6B6B6B;
 }
 
-#header div.social ul.social li a{
+div.social ul.social li a{
     float: left;
     width: 36px;
     height: 36px;
@@ -167,28 +161,33 @@ thead tr th, thead tr td, tbody tr th, tbody tr td { padding: 8px; line-height: 
     opacity: 0.5;
 }
 
-#header div.social ul.social li a:hover {
+div.social ul.social li a:hover {
     opacity: 0.9;
 }
 
-#header div.social ul.social li a.twitter {
+div.social ul.social li a.twitter {
     background-position: 0px 0;
 }
-#header div.social ul.social li a.facebook {
+div.social ul.social li a.facebook {
     background-position: -61px 0;
 }
-#header div.social ul.social li a.gplus {
+div.social ul.social li a.gplus {
     background-position: -121px 0;
 }
-#header div.social ul.social li a.youtube {
+div.social ul.social li a.youtube {
     background-position: -177px 0;
 }
-#header div.social ul.social li a.rss {
+div.social ul.social li a.rss {
     background-position: -242px 0;
 }
-#header div.social ul.social li a.skype {
+div.social ul.social li a.skype {
     background-position: -304px 0;
 }
+
+/*
+#social_sm div.social {
+    align-content: center;
+}*/
 
 /* header-banner-wrapper */
 .html {
@@ -214,7 +213,6 @@ body.html.front #header-banner-wrapper {
 }
 
 #header-banner-wrapper div.slogan {
-    min-width: 768px;
     max-width: 991px;
     background: url(../images/local/bg_slogan.png) top left repeat;
     -webkit-border-radius: 10px;
@@ -237,6 +235,16 @@ body.html.front #header-banner-wrapper {
 #header-banner-wrapper div.slogan p {
 	font-size: 34px;
 	font-weight: 100;
+}
+
+@media only screen and (max-width: 767px) {
+        #header-banner-wrapper div.slogan  h2 {
+        font-size: 30px;
+    }
+
+    #header-banner-wrapper div.slogan p {
+        font-size: 20px;
+    }
 }
 
 /* Navigation */
@@ -922,12 +930,12 @@ input[type="submit"]:hover {
 
 /*page-title*/
 h1.page-title {
-    
     text-align: left;
     font-size: 50px;
     font-weight: 100;
     margin: 0 auto 50px;
     color: #868686;
+    padding-left: 35px;
 }
 
 
@@ -1008,16 +1016,25 @@ ul.menu li.expanded ul { padding-left: 25px; border-top: 1px dashed #ddd; margin
 /*header-top menu*/
 #header-top ul.menu li a { font-size: 13px; text-transform: capitalize;  padding: 16px 20px 16px; }
 
+
+/*superfish support*/
+.block-superfish select { 
+    -webkit-border-radius: 0; 
+    -moz-border-radius: 0; 
+    border: 1px solid #ccc;
+    width: 95%; 
+    display: inline-block;
+    font-size: 12px;
+    height: 20px;
+    color: #666; 
+    margin: 30px 0;
+    font-family: 'Cabin Condensed', Arial, sans-serif;
+}
+
+
 /*superfish menu style resets*/
 .sf-menu.sf-horizontal.sf-shadow ul { background: #ffffff; padding: inherit!important; -webkit-border-top-right-radius: 0; -webkit-border-bottom-left-radius: 0;
 -moz-border-radius-topright: 0; -moz-border-radius-bottomleft: 0; border-top-right-radius: 0; border-bottom-left-radius: 0; }
-
-/*********/
-/*pre-header menu, bottom-content*/
-#pre-header ul.menu li a.active, #pre-header ul.menu li a:hover, 
-#bottom-content ul.menu li a.active, #bottom-content ul.menu li a:hover { color: #fafafa }
-
-#pre-header ul.menu li a { border-bottom: 1px dashed #444444; }
 
 /* Logo - Site name*/
 #logo { padding:0 0 5px 0; text-align: center; }
@@ -1041,7 +1058,10 @@ ul.menu li.expanded ul { padding-left: 25px; border-top: 1px dashed #ddd; margin
 
 .node header h2 a:hover { text-decoration: none; }
 
-.node > .content, #comments, .page-contact #content-wrapper { padding: 20px 40px; }
+.node > .content, #comments, 
+.page-contact div.region-content { 
+    padding: 20px 40px; 
+}
 
 .node header { padding: 10px 40px 20px; }
 

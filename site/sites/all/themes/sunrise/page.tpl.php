@@ -1,7 +1,9 @@
+<div id="header-banner-wrapper">
+    <div id="header-wrapper">
 <?php if ($page['header_top_left'] || $page['header_top_right']) :?>
 <!-- #header-top -->
-<!-- TODO: remove this displayed none area -->
-<div id="header-top" class="clearfix" style="display:none">
+
+<div id="header-top" class="clearfix" >
     <div class="container">
 
         <!-- #header-top-inside -->
@@ -39,8 +41,6 @@
 <!-- EOF: #header-top -->    
 <?php endif; ?>
 
-<div id="header-banner-wrapper">
-    <div id="header-wrapper">
     <!-- header -->
     <header id="header" role="banner" class="clearfix">
         <div class="container">
@@ -81,17 +81,6 @@
             <!-- EOF: #header-inside -->
 
         </div>
-
-        <div class="social">
-            <ul class="social">
-                <li><a href="#" title="RSS" class="twitter"></a></li>
-                <li><a href="#" title="RSS" class="facebook"></a></li>
-                <li><a href="#" title="RSS" class="gplus"></a></li>
-                <li><a href="#" title="RSS" class="youtube"></a></li>
-                <li><a href="#" title="RSS" class="rss"></a></li>
-                <li><a href="#" title="RSS" class="skype"></a></li>
-            </ul>
-        </div>
         
     </header>
     <!-- EOF: #header --> 
@@ -120,6 +109,26 @@
     <!-- EOF: #main-navigation -->
     
 
+    <!-- #social --> 
+    <div id="social_sm" class="clearfix" display="hidden">
+        
+            <!-- #main-navigation-inside -->
+            <div id="social" class="clearfix">
+                <div class="row">
+                    <div class="col-md-12">
+                            <?php if ($page['social']) :?>
+                            <?php print drupal_render($page['social']); ?>
+                            <?php endif; ?>
+                    </div>
+                </div>
+            </div>
+            <!-- EOF: #main-navigation-inside -->
+    </div>
+    <!-- EOF: #social -->
+        
+        
+
+        
     </div> <!-- #header-wrapper -->
 
     <?php if ($page['banner']) : ?>

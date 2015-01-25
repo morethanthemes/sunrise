@@ -14,6 +14,7 @@ regions[header_top_left] = Header Top Left
 regions[header_top_right] = Header Top Right
 regions[header] = Header
 regions[navigation] = Navigation
+regions[social] = Social
 regions[banner] = Banner
 regions[highlighted] = Highlighted
 
