@@ -7,7 +7,12 @@
 * { transition: all 0.3s ease-out; } 
 
 
-body { color: #444; font-family: 'Open Sans', sans-serif; font-size: 14px; line-height: 160%; }
+body { 
+    color: #444; 
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 14px; 
+    line-height: 1.5;
+}
 
 p { 
     margin: 0 0 0; 
@@ -133,7 +138,7 @@ body.html.front #header {
 /*social*/
 div.social {
     margin: 0;
-    /*position: absolute;*/
+    position: absolute;
     right: 10px;
     top: 10px;
     float:right;
@@ -211,6 +216,7 @@ div.social ul.social li a.skype, #social2 .social a.skype {
         text-align: center;
         float: none;
         display: block;
+        position: relative;
     }
 }
 
@@ -239,7 +245,7 @@ body.html.front #header-banner-wrapper {
 }
 
 #header-banner-wrapper div.slogan {
-    max-width: 991px;
+    /*max-width: 991px;*/
     background: url(../images/local/bg_slogan.png) top left repeat;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -1063,7 +1069,10 @@ ul.menu li.expanded ul { padding-left: 25px; border-top: 1px dashed #ddd; margin
 -moz-border-radius-topright: 0; -moz-border-radius-bottomleft: 0; border-top-right-radius: 0; border-bottom-left-radius: 0; }
 
 /* Logo - Site name*/
-#logo { padding:0 0 5px 0; text-align: center; }
+#logo { 
+    padding: 25px 0 5px 0; 
+    text-align: center; 
+}
 
 #logo img { display: inherit; }
 

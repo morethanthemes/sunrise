@@ -4,7 +4,7 @@
 <!-- #header-top -->
 
 <div id="header-top" class="clearfix" >
-    <div class="container">
+    <!--<div class="container">-->
 
         <!-- #header-top-inside -->
         <div id="header-top-inside" class="clearfix">
@@ -36,14 +36,14 @@
         </div>
         <!-- EOF: #header-top-inside -->
 
-    </div>
+    <!--</div>-->
 </div>
 <!-- EOF: #header-top -->    
 <?php endif; ?>
 
     <!-- header -->
     <header id="header" role="banner" class="clearfix">
-        <div class="container">
+      <!--  <div class="container"> -->
 
             <!-- #header-inside -->
             <div id="header-inside" class="clearfix">
@@ -79,7 +79,7 @@
                 </div>
             </div>
             <!-- EOF: #header-inside -->
-        </div>
+        <!--</div>-->
         
     </header>
     <!-- EOF: #header --> 
