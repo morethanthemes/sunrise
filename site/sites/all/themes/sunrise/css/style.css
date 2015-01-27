@@ -236,7 +236,7 @@ body.html.front #header-banner-wrapper {
     background-image: url(../images/local/sunrise_background1.jpg);
     background-attachment: fixed;
     background-size: cover;
-    min-height: 193px;
+    min-height: 200px;
     
     -webkit-background-size: cover; /* For WebKit*/
     -moz-background-size: cover;    /* Mozilla*/
@@ -290,6 +290,7 @@ body.html.front #header-banner-wrapper {
     background: url(../images/local/bg_nav.png) top left repeat;
     padding: 3px 0;
     margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 #main-navigation-inside {
@@ -374,6 +375,7 @@ body.html.front #header-banner-wrapper {
 /* Responsive Grids */
 div.field-item img {
     width:100%;
+    padding: 40px;
 }
 
 #page {
@@ -458,6 +460,7 @@ display: none; }
 		-webkit-border-radius: 3px;
 		-moz-border-radius: 3px;
 		border-radius: 3px;
+        padding: 0;
 	}
 
 	#menulist .menulist .post-content {
@@ -554,7 +557,7 @@ display: none; }
 .gallery-icon {
 	padding: 10px;
 }
-.gallery img {
+div.field-item .gallery img {
 	border:1px solid #f0f0f0 !important;
 	padding: 1px;
 	-webkit-border-radius: 3px;
@@ -675,15 +678,15 @@ display: none; }
 }
 
 #map-canvas { 
-    display:none; 
-    height:350px; 
-    width:100%; 
-    max-width:100%; 
-    overflow:hidden;
+    display: none; 
+    height: 350px; 
+    width: 100%; 
+    max-width: 100%; 
+    overflow: hidden;
     -moz-box-sizing: border-box; 
     -webkit-box-sizing: border-box; 
     box-sizing: border-box; 
-    border:none; 
+    border: none; 
 }
 
 #map-canvas img { 
@@ -804,7 +807,7 @@ header div.submitted span span.username{
     margin-left: 0px;
 }
 
-div.submitted span {
+div.submitted {
     margin-left: 40px;
     color: #ccc;
 }
@@ -854,7 +857,7 @@ body.page-node-15 h1.page-title,
 body.page-node-16 h1.page-title,
 body.page-node-17 h1.page-title,
 article.node-blog header h2 a {
-    display:none;
+    display: none;
 }
 
 article.node.node-blog a:focus {
@@ -863,7 +866,7 @@ article.node.node-blog a:focus {
 
 article.node.node-blog header div.user-picture,
 article.node.node-article header div.user-picture { 
-    display:none;
+    display: none;
 }
 
 article.node.node-blog article.comment header div.user-picture,
@@ -1149,7 +1152,7 @@ ul.menu li.expanded ul { padding-left: 25px; border-top: 1px dashed #ddd; margin
 }
 
 .comment ul.inline li {
-    padding-left: 65px;
+    padding-left: 29px;
 }
 
 .comment ul.links.inline li a {

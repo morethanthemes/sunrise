@@ -1,5 +1,6 @@
 <article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
+  <?php print render($content['field_image']); ?>
   <?php if ($title_prefix || $title_suffix || $display_submitted || !$page): ?>
   <header>
     <?php print render($title_prefix); ?>
@@ -12,6 +13,8 @@
       <div class="submitted">
         <?php print $user_picture; ?>
         <span class="glyphicon glyphicon-calendar"></span> <?php print $submitted; ?>
+        <span class="comment-counter"> - <?php print $node->comment_count; ?> Comments</span>
+    
       </div>
     <?php endif; ?>
   </header>
