@@ -845,7 +845,11 @@ article.node.node-blog header h2 a,
     text-align: left;
     font-size: 50px;
     font-weight: 100;
-    margin: 0 auto 50px;
+    padding-left: 40px
+}
+
+#block-system-main div.header2 h2 a {
+    padding: 0;
 }
 
 #block-system-main header  {
@@ -855,14 +859,14 @@ article.node.node-blog header h2 a,
 body.page-node-14 h1.page-title,
 body.page-node-15 h1.page-title,
 body.page-node-16 h1.page-title,
-body.page-node-17 h1.page-title,
-article.node-blog header h2 a {
+body.page-node-17 h1.page-title/*,
+article.node-blog header h2 a */{
     display: none;
 }
 
-article.node.node-blog a:focus {
+/*article.node.node-blog a:focus {
     color: #666666;
-}
+}*/
 
 article.node.node-blog header div.user-picture,
 article.node.node-article header div.user-picture { 
@@ -1103,7 +1107,9 @@ ul.menu li.expanded ul { padding-left: 25px; border-top: 1px dashed #ddd; margin
 
 .node header { padding: 10px 40px 20px; }
 
-.field-name-field-image { margin: 10px 0 20px; }
+.field-name-field-image { 
+    margin: 0; 
+}
 
 .node .user-signature { font-size: 12px; padding: 0; }
 
