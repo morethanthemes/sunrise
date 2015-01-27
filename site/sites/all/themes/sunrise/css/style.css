@@ -114,7 +114,12 @@ h6 { font-size: 16px }
 
 
 /*tables*/
-table { width: 100%; margin-bottom: 20px; border: 1px solid #dfdfdf; }
+table { 
+    width: 100%; 
+    margin-top: 20px;
+    margin-bottom: 20px; 
+    border: 1px solid #dfdfdf; 
+}
 
 table tbody { border-top: none; }
 
@@ -1158,7 +1163,8 @@ ul.menu li.expanded ul { padding-left: 25px; border-top: 1px dashed #ddd; margin
 }
 
 .comment ul.inline li {
-    padding-left: 29px;
+    padding-left: 65px;
+    display: block;
 }
 
 .comment ul.links.inline li a {
@@ -1255,7 +1261,10 @@ input[type="reset"]:hover, input[type="button"]:hover, .highlighted-block .btn:h
 /* Drupal system links */
 ul.links { padding: 0; margin: 0; list-style-position: inside; }
 
-ul.links li { margin: 0; }
+ul.links li { 
+    margin: 0; 
+    display: inherit;
+}
 
 /* Breadcrumb */
 .breadcrumb { background-color: #fcfcfc; border: 1px solid #eaeaea; padding: 14px 20px; margin-bottom: 30px; -webkit-border-radius: 6px;
