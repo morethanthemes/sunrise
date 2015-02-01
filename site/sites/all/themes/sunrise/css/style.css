@@ -658,7 +658,7 @@ div.field-item .gallery img {
     display: block;
     width: 200px;
     border: 0;
-    padding: 10px 30px;
+    padding: 10px 15px;
     text-align: center;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -1274,14 +1274,16 @@ ul.links li {
 
 /* Search block */
 
-#block-search-form .form-actions, .sidebar-search-block .form-actions { 
+#block-search-form .form-actions, .sidebar-search-block .form-actions,
+#search-block-form .form-actions { 
     position: absolute; 
     top:0px; 
     color: #fff; 
     font-size: 16px;
 }
 
-#block-search-form .form-actions:after, .sidebar-search-block .form-actions:after { 
+#block-search-form .form-actions:after, .sidebar-search-block .form-actions:after,
+#search-block-form .form-actions:after { 
     font-family: 'Glyphicons Halflings'; 
     content: "\e003"; 
     position: absolute; 
@@ -1290,7 +1292,8 @@ ul.links li {
     padding: 1px 8px;
 }
 
-#block-search-form .form-actions, .sidebar-search-block .form-actions  {
+#block-search-form .form-actions, .sidebar-search-block .form-actions,
+#search-block-form .form-actions {
 	border:1px solid #ccc;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
@@ -1298,18 +1301,20 @@ ul.links li {
 	background: #fff;
 }
 
-#block-search-form .form-actions, .sidebar-search-block .form-actions input[type="submit"] {
+#block-search-form .form-actions, .sidebar-search-block .form-actions input[type="submit"],
+#search-block-form .form-actions  input[type="submit"] {
     width: 0px;
     margin: 0px 1px;
     height: 28px;
-    padding: 10px 15px;
 }
 
-#block-search-form .form-actions, .sidebar-search-block .form-actions {
+#block-search-form .form-actions, .sidebar-search-block .form-actions,
+#search-block-form .form-actions {
     border: 0;
 }
 
-#block-search-form .form-item, .sidebar-search-block .form-item input.form-text{
+#block-search-form .form-item, .sidebar-search-block .form-item input.form-text,
+#search-block-form .form-item input.form-text {
     width: 90%;
     height: auto;
     margin-bottom: inherit;

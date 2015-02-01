@@ -1,5 +1,5 @@
 name = Sunrise
-description = {TODO: Sunrise description} An extremely flexible, responsive theme with a wealth of regions. Supported by <a href="http://www.morethanthemes.com/" target="_blank">More than (just) Themes</a>. If you like this theme, feel welcome to also check our other <a href="http://www.morethanthemes.com" target="_blank">Premium</a> and <a href="http://drupalizing.com" target="_blank">Free</a> Drupal themes.
+description = An extremely flexible, responsive theme with a wealth of regions. Supported by <a href="http://www.morethanthemes.com/" target="_blank">More than (just) Themes</a>. If you like this theme, feel welcome to also check our other <a href="http://www.morethanthemes.com" target="_blank">Premium</a> and <a href="http://drupalizing.com" target="_blank">Free</a> Drupal themes.
 
 version = VERSION
 core = 7.x
