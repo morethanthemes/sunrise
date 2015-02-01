@@ -5,7 +5,7 @@
   <title><?php print $head_title; ?></title>
   <?php print $styles; ?>
 
-  <?php if (theme_get_setting('responsive_respond','bootstrap_business')): global $base_path; global $base_root; ?>
+  <?php if (theme_get_setting('responsive_respond','sunrise')): global $base_path; global $base_root; ?>
   <!-- Media Queries support for IE6-8 -->  
   <!--[if lt IE 9]>
     <script src="<?php print $base_root . $base_path . path_to_theme() ?>/js/respond.min.js"></script>
