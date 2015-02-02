@@ -34,6 +34,8 @@ settings[breadcrumb_display]= 1
 settings[scrolltop_display]= 1
 settings[responsive_respond]= 0
 settings[bootstrap_css_cdn]= 3.2.0
+settings[bootstrap_js_cdn]= 3.2.0
+
 
 settings[google_map_latitude]='37.422114'
 settings[google_map_longitude]='-122.083856'

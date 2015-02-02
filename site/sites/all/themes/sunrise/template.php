@@ -55,11 +55,6 @@ function sunrise_preprocess_html(&$variables) {
         $cdn = '//maxcdn.bootstrapcdn.com/bootstrap/' . theme_get_setting('bootstrap_js_cdn', 'sunrise')  . '/js/bootstrap.min.js';
         drupal_add_js($cdn, array('type' => 'external'));
     }
-    
-    if (theme_get_setting('bootstrap_js_cdn', 'bootstrap_business')) {
-        $cdn = '//maxcdn.bootstrapcdn.com/bootstrap/' . theme_get_setting('bootstrap_js_cdn', 'bootstrap_business')  . '/js/bootstrap.min.js';
-        drupal_add_js($cdn, array('type' => 'external'));
-    }
 	
 	/**
 	* Add Javascript for enable/disable scrollTop action
