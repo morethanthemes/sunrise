@@ -678,6 +678,9 @@ div.field-item .gallery img {
     box-shadow: 0px 0px 5px rgba(0,0,0, 0.3);
     cursor: pointer;
 }
+#promoted-inside a:hover  {
+    text-decoration: none;
+}
 
 #promoted-inside a.post_read_more:hover {
 	color:#fff;
