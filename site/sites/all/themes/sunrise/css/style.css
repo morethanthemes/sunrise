@@ -456,19 +456,19 @@ display: none; }
         display: none;   
     }
 
-    #menulist div.menu-item {
+    .menulist div.menu-item {
 	border-bottom: 1px solid #f0f0f0;
 	padding-bottom: 20px;
 	margin-bottom: 20px;
     }
 
-	#menulist .post-thumb {
+	.menulist .post-thumb {
 		float:left;
 		width:60px;
 		margin-right: 20px;
 	}
 
-	#menulist .post-thumb img {
+	.menulist .post-thumb img {
 		width: 100%;
 		height: auto;
 		-webkit-border-radius: 3px;
@@ -477,37 +477,37 @@ display: none; }
         padding: 0;
 	}
 
-	#menulist .menulist .post-content {
+	.menulist .menulist .post-content {
 		margin:0;
 	}
 
-	#menulist .menulist .with-thumb .post-content {
+	.menulist .menulist .with-thumb .post-content {
 		margin-left:60px;
 	}
 
-	#menulist .menulist .post-content p:last-child {
+	.menulist .menulist .post-content p:last-child {
 		margin-bottom: 0;
 		padding-bottom: 0;
 	}
 
-	#menulist .menu-item-title {
+	.menulist .menu-item-title {
 		font-size: 22px;
 		font-weight: 100;
 		margin-bottom: 0;
 		padding:0;
 	}
 
-	#menulist .menu-item-content {
+	.menulist .menu-item-content {
 		padding-top: 10px;
 	}
 
-	#menulist .menu-item-price {
+	.menulist .menu-item-price {
 		float: right;
 		font-size: 22px;
 		color: #E54D1B;
 	}
 
-    #menulist .menu-title, #block-system-main div.view.view-our-menu a {
+    .menulist .menu-title, #block-system-main div.view.view-our-menu a {
 		text-align: center;
 		font-weight: 600;
 		font-size: 22px;
@@ -524,23 +524,23 @@ display: none; }
         color: #666666;
     }
 
-	#menulist .menu-title:after, 
-	#menulist .menu-title:before, 
+	.menulist .menu-title:after, 
+	.menulist .menu-title:before, 
     article.node.node-article h2 a:after,
     article.node.node-article h2 a:before {
 		content: " ~ "
 	}
 
-	#menulist .menu-category {
+	.menulist .menu-category {
 		margin-bottom: 40px;
 	}
 
-    #block-system-main div.view.view-our-menu #menulist .level-2 {
+    #block-system-main div.view.view-our-menu .menulist .level-2 {
         font-size: 18px;
         display: block;
     }
 
-    article.node.node-article #menulist .level-2 {
+    article.node.node-article .menulist .level-2 {
         font-size: 18px;
         display: none;
     }
@@ -1464,7 +1464,10 @@ left: 0; text-align: center; text-transform: uppercase; display: block; }
 }
 
 /*credits*/
-.credits { margin-bottom: 0; font-size: 0.9em; }
+.credits { 
+    margin-bottom: 0; 
+    font-size: 0.9em; 
+}
 
 /*toggle control*/
 .toggle-control { width: 100%; position: relative; z-index: 13; }
