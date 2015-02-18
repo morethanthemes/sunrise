@@ -35,7 +35,13 @@ a:hover {
 
 a:focus { outline: none; text-decoration: none; }
 
-blockquote { margin: 40px 40px 24px; border-left: none; padding: 0; position: relative; color: #999; }
+blockquote { 
+    margin: 40px 40px 24px; 
+    border-left: none; 
+    padding-left: 0; 
+    position: relative; 
+    color: #999; 
+}
 
 blockquote::before { content: "\201C"; display: block; font-size: 30px; left: -20px; top: 5px; position: absolute;  }
 
@@ -69,13 +75,10 @@ body {
 
 /*Heading*/
 h1, h2, h3, h4, h5, h6 { 
-    font-weight: bold; 
-    /*line-height: 120%; 
-    padding: 0; 
-    margin: 20px 0 10px 0; */
+    font-weight: bold;
     
-    margin-top: 0px;
-    margin-bottom: 0px;
+    line-height: 120%; 
+    margin: 20px 0 10px 0;
     
     font-family: 'Open Sans', sans-serif; 
     color:#666666;
@@ -448,11 +451,7 @@ display: none; }
 
 /*menu list*/
 
-    article.node-article footer, 
-    #node-24 div.submitted, 
-    #node-26 div.submitted,
-    #node-27 div.submitted, 
-    #node-28 div.submitted {
+    article.node-article footer {
         display: none;   
     }
 
@@ -529,6 +528,10 @@ display: none; }
     article.node.node-article h2 a:after,
     article.node.node-article h2 a:before {
 		content: " ~ "
+	}
+
+    .menulist .level-2 {
+		font-size: 18px;
 	}
 
 	.menulist .menu-category {
@@ -849,6 +852,12 @@ div.submitted {
     line-height: 36px
 }
 
+.region-sidebar-second .item-list ul li {
+    padding: 0px;
+    margin: 0px;
+    list-style-type:none;
+}
+
 /* blog title */
 
 .node-type-blog h1.page-title { 
@@ -1153,7 +1162,6 @@ ul.menu li.expanded ul { padding-left: 25px; border-top: 1px dashed #ddd; margin
 }
 
 .comment { 
-    padding: 8px 0;
     border-bottom: 1px solid #e3e3e3;
 } 
 
@@ -1161,8 +1169,11 @@ ul.menu li.expanded ul { padding-left: 25px; border-top: 1px dashed #ddd; margin
     font-weight: 700;
 }
 
-#comments .comment p {
-    padding-left: 65px;
+.comment .field-name-comment-body {
+    padding-left: 65px
+}
+
+#main .comment p {
     margin: 15px 0;
     padding-bottom: 0px;
 }

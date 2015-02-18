@@ -8,7 +8,6 @@
 
         <!-- #header-top-inside -->
         <div id="header-top-inside" class="clearfix">
-            <div class="row">
                 <div class="col-md-6">                 
                     <?php if ($page['header_top_left']) :?>
                     <div class="<?php print $header_top_left_grid_class; ?>">
@@ -32,7 +31,6 @@
                     </div>
                     <?php endif; ?>
                 </div>
-            </div>
         </div>
         <!-- EOF: #header-top-inside -->
 
@@ -47,7 +45,6 @@
 
             <!-- #header-inside -->
             <div id="header-inside" class="clearfix">
-                <div class="row">
                     <div class="col-md-12">
 
                     <?php if ($logo):?>
@@ -77,7 +74,6 @@
 
                     </div>
                 </div>
-            </div>
             <!-- EOF: #header-inside -->
         <!--</div>-->
         
@@ -89,7 +85,6 @@
         
             <!-- #main-navigation-inside -->
             <div id="main-navigation-inside" class="clearfix">
-                <div class="row">
                     <div class="col-md-12">
                         <nav role="navigation">
                             <?php if ($page['navigation']) :?>
@@ -101,7 +96,6 @@
                             <?php endif; ?>
                         </nav>
                     </div>
-                </div>
             </div>
             <!-- EOF: #main-navigation-inside -->
     </div>
