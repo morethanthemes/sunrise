@@ -10,25 +10,21 @@
         <div id="header-top-inside" class="clearfix">
                 <div class="col-md-6">                 
                     <?php if ($page['header_top_left']) :?>
-                    <div class="<?php print $header_top_left_grid_class; ?>">
-                        <!-- #header-top-left -->
-                        <div id="header-top-left" class="clearfix">
-                            <?php print render($page['header_top_left']); ?>
-                        </div>
-                        <!-- EOF:#header-top-left -->
+                    <!-- #header-top-left -->
+                    <div id="header-top-left" class="clearfix">
+                        <?php print render($page['header_top_left']); ?>
                     </div>
+                    <!-- EOF:#header-top-left -->
                     <?php endif; ?>
                 </div>
 
                 <div class="col-md-6">    
                     <?php if ($page['header_top_right']) :?>
-                    <div class="<?php print $header_top_right_grid_class; ?>">
-                        <!-- #header-top-right -->
-                        <div id="header-top-right" class="clearfix">
-                            <?php print render($page['header_top_right']); ?>
-                        </div>
-                        <!-- EOF:#header-top-right -->
+                    <!-- #header-top-right -->
+                    <div id="header-top-right" class="clearfix">
+                        <?php print render($page['header_top_right']); ?>
                     </div>
+                    <!-- EOF:#header-top-right -->
                     <?php endif; ?>
                 </div>
         </div>

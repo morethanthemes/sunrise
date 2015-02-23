@@ -107,14 +107,7 @@ function sunrise_preprocess_page(&$vars) {
 	} else {
 		$vars['main_grid_class'] = 'col-md-12';			
 	}
-       
-	if($vars['page']['header_top_left'] && $vars['page']['header_top_right']) { 
-		$vars['header_top_left_grid_class'] = 'col-md-8';
-		$vars['header_top_right_grid_class'] = 'col-md-4';
-	} elseif ($vars['page']['header_top_right'] || $vars['page']['header_top_left']) {
-		$vars['header_top_left_grid_class'] = 'col-md-12';
-		$vars['header_top_right_grid_class'] = 'col-md-12';		
-	}
+
 }
 
 /**

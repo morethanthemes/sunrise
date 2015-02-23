@@ -28,6 +28,10 @@ a:hover {
 	color: #FF4D4D;
 }
 
+a:focus {
+    text-decoration: none;
+}
+
 blockquote { 
     margin: 40px 40px 24px; 
     border-left: none; 
@@ -841,7 +845,6 @@ div.submitted {
 	font-size: 14px;
 	text-transform: uppercase;
     text-shadow: 1px 1px 1px #FFFFFF;
-    line-height: 36px
 }
 
 .region-sidebar-second .item-list ul li {
