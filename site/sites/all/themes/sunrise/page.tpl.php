@@ -42,7 +42,7 @@
             <!-- #header-inside -->
             <div id="header-inside" class="clearfix">
                     <div class="col-md-12">
-
+                    
                     <?php if ($logo):?>
                     <div id="logo">
                         <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"> 

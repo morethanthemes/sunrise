@@ -8,7 +8,7 @@
 
 
 body { 
-    color: #444; 
+	color: #666666;
     font-family: 'Open Sans', sans-serif; 
     font-size: 14px; 
     line-height: 1.5;
@@ -40,7 +40,7 @@ blockquote {
     color: #999; 
 }
 
-blockquote::before { content: "\201C"; display: block; font-size: 30px; left: -20px; top: 5px; position: absolute;  }
+blockquote:before { content: "\201C"; display: block; font-size: 30px; left: -20px; top: 5px; position: absolute;  }
 
 blockquote p { font-size: 14px; line-height: 160%; font-weight: 400; }
 
@@ -1105,14 +1105,17 @@ ul.menu li.expanded ul { padding-left: 25px; border-top: 1px dashed #ddd; margin
 -moz-border-radius-topright: 0; -moz-border-radius-bottomleft: 0; border-top-right-radius: 0; border-bottom-left-radius: 0; }
 
 /* Logo - Site name*/
+
+a img {
+    border: 0px none;
+}
+
 #logo { 
-    padding: 25px 0 5px 0; 
     text-align: center; 
+    padding: 30px 0px 0px;
 }
 
 #logo img { display: inherit; }
-
-#logo img:hover { opacity: 0.8; filter: alpha(opacity=80); }
 
 #site-name a { font-size: 38px; font-weight: 700; line-height: 1em; margin: 0 0 10px; color: #444444; display: block;}
 
@@ -1123,6 +1126,7 @@ ul.menu li.expanded ul { padding-left: 25px; border-top: 1px dashed #ddd; margin
     color: #aaa;
     display: block;
     text-align: center;
+    margin-top: 10px;
 }
 
 /*node*/
