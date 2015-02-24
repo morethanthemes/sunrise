@@ -283,10 +283,10 @@ body.html.front #header-banner-wrapper {
     margin: 11% auto 11%;
 }
 
-#header-banner-wrapper div.slogan  h2 {
+#header-banner-wrapper div.slogan h2 {
 	font-size: 60px;
 	font-weight: 900;
-	margin-bottom: 25px;
+    margin: 0px 0px 25px;
     color:#fff;
 }
 
@@ -408,10 +408,6 @@ div.field-item img {
 
 /*highlighted*/
 
-.region-highlighted {
-    padding: 20px 0;
-}
-
 #top-content div.col-md-3 {
     text-align: center;
 }
@@ -419,6 +415,7 @@ div.field-item img {
 #top-content div.col-md-3:nth-of-type(4n+1) {
     margin-left: 0;
     clear: left;
+    margin-bottom: 30px;
 }
 
 #top-content div.col-md-3 img {
@@ -431,6 +428,7 @@ div.field-item img {
     font-size: 16px;
     color: #000;
     font-family: 'Open Sans',Sans-Serif;
+    margin: 0px 0px 0px;
 }
 
 #top-content div.col-md-3 p {
