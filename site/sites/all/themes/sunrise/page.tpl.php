@@ -81,7 +81,6 @@
         
             <!-- #main-navigation-inside -->
             <div id="main-navigation-inside" class="clearfix">
-                    <div class="col-md-12">
                         <nav role="navigation">
                             <?php if ($page['navigation']) :?>
                             <?php print drupal_render($page['navigation']); ?>
@@ -91,7 +90,6 @@
 
                             <?php endif; ?>
                         </nav>
-                    </div>
             </div>
             <!-- EOF: #main-navigation-inside -->
     </div>

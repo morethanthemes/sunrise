@@ -1,7 +1,15 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,greek);
 
 /* Reset unusual Firefox-on-Android default style, see https://github.com/necolas/normalize.css/issues/214*/
-@media (max-width: 991px) { .form-text, .form-textarea, .block-superfish select { background-image: none; } }
+@media (max-width: 991px) { 
+    .form-text, .form-textarea, .block-superfish select { 
+        background-image: none; 
+    } 
+    
+    nav {
+        padding: 20px;
+    }
+}
 
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 * { transition: all 0.3s ease-out; } 
@@ -1090,15 +1098,13 @@ ul.menu li.expanded ul { padding-left: 25px; border-top: 1px dashed #ddd; margin
     -webkit-border-radius: 0; 
     -moz-border-radius: 0; 
     border: 1px solid #ccc;
-    width: 95%; 
+    width: 100%; 
     display: inline-block;
     font-size: 12px;
-    height: 20px;
+    padding: 5px;
     color: #666; 
-    margin: 30px 0;
     font-family: 'Cabin Condensed', Arial, sans-serif;
 }
-
 
 /*superfish menu style resets*/
 .sf-menu.sf-horizontal.sf-shadow ul { background: #ffffff; padding: inherit!important; -webkit-border-top-right-radius: 0; -webkit-border-bottom-left-radius: 0;
