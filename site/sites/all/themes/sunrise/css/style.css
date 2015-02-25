@@ -945,8 +945,12 @@ article.node.node-article article.comment header div.user-picture {
     color: #999;
 }
 
-#footer div.col-md-3 {
-	padding:40px 0;
+/*#footer div.col-md-3 {
+	padding: 40px 0;
+}*/
+
+#footer-inside {
+    padding: 40px 0;
 }
 
 #footer h2 {
@@ -981,7 +985,7 @@ article.node.node-article article.comment header div.user-picture {
 	padding: 20px 0;
 	text-align: center;
 	border-top: 5px solid ##D7D7D7;
-	margin: 0 auto;
+	margin: 0px auto;
 	color: #999;
     font-size: 12px;
 }
@@ -993,7 +997,6 @@ article.node.node-article article.comment header div.user-picture {
 
 .credits { 
     margin-bottom: 0; 
-    font-size: 0.9em; 
 }
 
 /* submit button */
@@ -1122,7 +1125,6 @@ a img {
 
 #logo { 
     text-align: center; 
-    padding: 30px 0px 0px;
 }
 
 #logo img { display: inherit; }
