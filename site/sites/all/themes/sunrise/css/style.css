@@ -810,6 +810,10 @@ label {
     margin-bottom: 2px;
 }
 
+textarea:focus, input:focus {
+    outline: 0;
+}
+
 input.form-text, textarea.form-textarea {
 	background:#fff;
 	border: 1px solid #eee;
