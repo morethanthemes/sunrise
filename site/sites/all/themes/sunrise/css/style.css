@@ -27,13 +27,14 @@ p {
     padding: 0; 
 }
 
-a {
+a, a:visited {
 	color: #E54D1B;
 	text-decoration: none;
 }
 
 a:hover {
 	color: #FF4D4D;
+    text-decoration: none;
 }
 
 a:focus {
