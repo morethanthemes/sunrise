@@ -21,7 +21,7 @@
     <?php if ($display_submitted): ?>
       <div class="submitted">
         <?php print $user_picture; ?>
-        <span class="glyphicon glyphicon-calendar"></span> <?php print $submitted; ?> 
+        <?php print $submitted; ?> 
       </div>
     <?php endif; ?>
   </header>

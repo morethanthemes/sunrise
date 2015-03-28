@@ -457,14 +457,10 @@ display: none; }
 
 /*menu list*/
 
-    article.node-article footer {
-        display: none;   
-    }
-
     .menulist div.menu-item {
-	border-bottom: 1px solid #f0f0f0;
-	padding-bottom: 20px;
-	margin-bottom: 20px;
+        border-bottom: 1px solid #f0f0f0;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
     }
 
 	.menulist .post-thumb {
@@ -777,15 +773,11 @@ div.field-item .gallery img {
 
 /*forms and contact form*/
 
-div.grippie, div.fieldset-wrapper, input#edit-preview {
-    display: none;
-}
-
-article.node-article input.form-text, article.node-blog input.form-text {
+article.node-article input.form-text, article.node-blog input.form-text, form#contact-site-form div.grippie {
     width: 100%;
 }
 
-article.node-article textarea.form-textarea, article.node-blog textarea.form-textarea {
+article.node-article textarea.form-textarea, article.node-blog textarea.form-textarea, div.grippie {
     width: 50%;
 }
 
@@ -845,10 +837,6 @@ header div.submitted span span.username{
 div.submitted {
     color: #ccc;
     margin: 20px 0px;
-}
-
-.node footer {
-    display: none;
 }
 
 /* sidebar second */
@@ -911,14 +899,14 @@ div.header2 h2 a {
     padding: 0 0 0;
 }
 
-article.node.node-blog header div.user-picture,
+/*article.node.node-blog header div.user-picture,
 article.node.node-article header div.user-picture { 
     display: none;
-}
+}*/
 
 article.node.node-blog article.comment header div.user-picture,
 article.node.node-article article.comment header div.user-picture { 
-    display:block;
+    display: block;
 }
 
 /* tags */
@@ -1028,18 +1016,6 @@ h1.page-title {
 }
 
 #header-top .block, #main-navigation .block, #banner .block { padding: 0; }
-
-/*glyphicon-calendar*/
-.glyphicon {
-    display: none;
-}
-
-/*glyphicon-block*/
-.glyphicon-block {text-align: center; }
-
-.glyphicon-block .glyphicon { font-size: 48px; margin: 30px 0 0 0; }
-
-.glyphicon-block h4 { margin-top: 10px; }
 
 /*lists*/
 ul li { list-style-type: square; }
@@ -1227,15 +1203,12 @@ a img {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
+    float:left;
+    margin-right: 5px;
 }
 
 .comment ul.links.inline li a:hover {
     opacity: 1;
-}
-
-.comment ul.links.inline li.comment-delete a,
-.comment ul.links.inline li.comment-edit a {
-    display: none;
 }
 
 .comment header { padding: 0; }
