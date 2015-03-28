@@ -347,7 +347,7 @@ body.html.front #header-banner-wrapper {
 	transition:none;        
     text-transform: uppercase; 
     font-weight: 700; 
-    padding: 0px 20px 0px 20px; 
+    padding: 10px 20px 10px 20px; 
 }
 
 #main-navigation-inside ul.menu li a span {
