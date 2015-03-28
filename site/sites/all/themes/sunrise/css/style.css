@@ -773,22 +773,6 @@ div.field-item .gallery img {
 
 /*forms and contact form*/
 
-article.node-article input.form-text, article.node-blog input.form-text, form#contact-site-form div.grippie {
-    width: 100%;
-}
-
-article.node-article textarea.form-textarea, article.node-blog textarea.form-textarea, div.grippie {
-    width: 50%;
-}
-
-form.contact-form input.form-text {
-    width: 50%;
-}
-
-form.contact-form textarea.form-textarea {
-    width: 100%;
-}
-
 #form {
     display:block;
     padding-top: 30px;
@@ -825,6 +809,22 @@ textarea.form-textarea {
 
 .marker, .form-required {
     color: #666666;
+}
+
+article.node-article input.form-text, article.node-blog input.form-text, form#contact-site-form div.grippie {
+    width: 100%;
+}
+
+article.node-article textarea.form-textarea, article.node-blog textarea.form-textarea, div.grippie {
+    width: 50%;
+}
+
+form.contact-form input.form-text {
+    width: 50%;
+}
+
+form.contact-form textarea.form-textarea {
+    width: 100%;
 }
 
 /* blog */
