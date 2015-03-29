@@ -517,18 +517,18 @@ display: none; }
 		letter-spacing: 1px;
 	}
  
-    article.node.node-article header h2 {
+    .node-article header h2 {
         text-align: center;
     }
 
-    article.node.node-article h2 a {
+    .node-article h2 a {
         color: #666666;
     }
 
 	.menulist .menu-title:after, 
 	.menulist .menu-title:before, 
-    article.node.node-article h2 a:after,
-    article.node.node-article h2 a:before {
+    .node-article h2 a:after,
+    .node-article h2 a:before {
 		content: " ~ "
 	}
 
@@ -545,12 +545,12 @@ display: none; }
         display: block;
     }
 
-    article.node.node-article .menulist .level-2 {
+    .node-article .menulist .level-2 {
         font-size: 18px;
         display: none;
     }
 
-    article.node.node-article header {
+    .node-article header {
         padding: 0px 0px 0px;
     }
 
@@ -886,7 +886,7 @@ article.node {
     padding: 20px 0px;
 }
 
-article.node.node-blog header h2 a {
+.node-blog header h2 a {
     display: none;
 }
 
@@ -909,13 +909,13 @@ div.header2 h2 a {
     padding: 0 0 0;
 }
 
-/*article.node.node-blog header div.user-picture,
-article.node.node-article header div.user-picture { 
+/*.node-blog header div.user-picture,
+.node-article header div.user-picture { 
     display: none;
 }*/
 
-article.node.node-blog article.comment header div.user-picture,
-article.node.node-article article.comment header div.user-picture { 
+.node-blog article.comment header div.user-picture,
+.node-article article.comment header div.user-picture { 
     display: block;
 }
 
