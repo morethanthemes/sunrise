@@ -413,12 +413,6 @@ div.field-item img {
     text-align: center;
 }
 
-#top-content div.post-highlighted:nth-of-type(4n+1) {
-    margin-left: 0;
-    clear: left;
-    margin-bottom: 30px;
-}
-
 #top-content div.post-highlighted img {
     display: block;
     margin-left: auto;
