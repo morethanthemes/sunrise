@@ -250,3 +250,41 @@ if (theme_get_setting('google_map_js', 'sunrise')) {
 	
 }
 
+/**
+ * Add Javascript for quicksand plugin
+ */
+if (theme_get_setting('quicksand_js','sunrise')):
+drupal_add_js(drupal_get_path('theme', 'sunrise') .'/js/plugins/jquery.quicksand.js');
+drupal_add_js(drupal_get_path('theme', 'sunrise') .'/js/plugins/quicksand_initialize.js');
+endif;	
+
+/**
+ * Add jquery.prettyPhoto.js and prettyPhoto.css files for portfolio items
+ */
+if (theme_get_setting('prettyphoto_js','sunrise')):
+	
+	drupal_add_js(drupal_get_path('theme', 'sunrise') . '/js/plugins/jquery.prettyPhoto.js');
+	drupal_add_css(drupal_get_path('theme', 'sunrise') . '/css/plugins/prettyPhoto.css');
+	
+	$prettyphoto_theme=theme_get_setting('prettyphoto_theme','sunrise');
+	$prettyphoto_social_tools=theme_get_setting('prettyphoto_social_tools','sunrise');
+
+	if ($prettyphoto_social_tools):
+		drupal_add_js('
+			jQuery("a[data-rel^=prettyPhoto], a.prettyPhoto, a[rel^=prettyPhoto]").prettyPhoto({
+			    overlay_gallery: false,
+			    theme: "'.$prettyphoto_theme.'",
+			});', array('type' => 'inline', 'scope' => 'footer', 'weight' => 15)
+		);
+	else:
+		drupal_add_js('
+			jQuery("a[data-rel^=prettyPhoto], a.prettyPhoto, a[rel^=prettyPhoto]").prettyPhoto({
+			    overlay_gallery: false,
+			    theme: "'.$prettyphoto_theme.'",
+			    social_tools: false,
+			});', array('type' => 'inline', 'scope' => 'footer', 'weight' => 15)
+		);
+	endif;
+
+
+endif;

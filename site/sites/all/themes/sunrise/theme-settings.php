@@ -148,8 +148,62 @@ function sunrise_form_system_theme_settings_alter(&$form, &$form_state) {
     '#default_value' => theme_get_setting('google_map_canvas','sunrise'),
   ); 
     
+  $form['mtt_settings']['tabs']['plugins']['quicksand'] = array(
+    '#type' => 'fieldset',
+    '#title' => t('Portfolio filters'),
+    '#collapsible' => TRUE,
+    '#collapsed' => TRUE,
+  );
+
+  $form['mtt_settings']['tabs']['plugins']['quicksand']['quicksand_js'] = array(
+    '#type' => 'checkbox',
+    '#title' => t('Include quicksand javascript code'),
+    '#description'   => t('Use the checkbox to include or not the quicksand javascript code in order to reorder and filter portofolio items with a nice shuffling animation [<em>sunrise/js/plugins/quicksand.js</em> & <em>sunrise/js/plugins/quicksand_initialize.js</em>]. <br>More info <a href="http://razorjack.net/quicksand/" target="_blank">http://razorjack.net/quicksand</a>.'),
+    '#default_value' => theme_get_setting('quicksand_js','sunrise'),
+  );    
     
-    
+    $form['mtt_settings']['tabs']['plugins']['prettyphoto'] = array(
+        '#type' => 'fieldset',
+        '#title' => t('PrettyPhoto'),
+        '#collapsible' => TRUE,
+        '#collapsed' => TRUE,
+    );
+
+    $form['mtt_settings']['tabs']['plugins']['prettyphoto']['prettyphoto_js'] = array(
+        '#type' => 'checkbox',
+        '#title' => t('Include prettyPhoto javascript and css code'),
+        '#description'   => t('Use the checkbox to include or not the prettyPhoto javascript and css code in order to overlay images on the current page [<em>sunrise/js/plugins/jquery.prettyPhoto.js</em> & <em>sunrise/css/plugins/prettyPhoto.css</em>]. <br>More info <a href="http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/" target="_blank">http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone</a>.'),
+        '#default_value' => theme_get_setting('prettyphoto_js','sunrise'),
+    );
+
+    $form['mtt_settings']['tabs']['plugins']['prettyphoto']['prettyphoto_theme'] = array(
+        '#type' => 'select',
+        '#title' => t('PrettyPhoto themes'),
+        '#description'   => t('From the drop-down menu, select the theme you prefer.'),
+        '#default_value' => theme_get_setting('prettyphoto_theme','sunrise'),
+        '#options' => array(
+            'pp_default' => t('Default'),
+            'light_rounded' => t('Light Rounded'),
+            'dark_rounded' => t('Dark Rounded'),
+            'light_square' => t('Light Square'),
+            'dark_square' => t('Dark Square'),
+            'facebook' => 'Facebook',
+            ),
+    );
+
+    $form['mtt_settings']['tabs']['plugins']['prettyphoto']['prettyphoto_social_tools'] = array(
+        '#type' => 'checkbox',
+        '#title' => t('Show Twitter and Facebook share buttons'),
+        '#description'   => t('Use the checkbox to enable or disable the Twitter and Facebook share buttons.'),
+        '#default_value' => theme_get_setting('prettyphoto_social_tools','sunrise'),
+    );
+
+    $form['mtt_settings']['tabs']['plugins']['jtweetanywhere'] = array(
+        '#type' => 'fieldset',
+        '#title' => t('jTweetAnywhere'),
+        '#collapsible' => TRUE,
+        '#collapsed' => TRUE,
+    );
     
     
 }
