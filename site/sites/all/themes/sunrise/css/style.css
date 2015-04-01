@@ -548,39 +548,6 @@ display: none; }
         padding: 0px 0px 0px;
     }
 
-/* gallery */
-
-#main p {
-    color:#666666;	
-    font-size:14px;
-	padding-bottom: 20px;
-}
-
-.gallery-item {
-    float: left;
-    margin-top: 10px;
-    text-align: center;
-    width: 20%;
-}
-
-.gallery dl {
-	margin: 0;
-}
-
-.gallery-icon {
-	padding: 10px;
-}
-
-div.field-item .gallery img {
-	border:1px solid #f0f0f0 !important;
-	padding: 1px;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
-	width: 100%;
-	height: auto;
-}
-
 /*promoted-insied */
 
 #promoted-inside h2 {
