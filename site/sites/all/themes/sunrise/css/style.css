@@ -291,15 +291,18 @@ textarea:focus, input:focus { outline: 0; }
 .form-textarea { font-size: 14px; }
 
 .marker, .form-required { color: #666666; }
-
-.form-text, #contact-site-form .grippie { width: 100%; }
-
-.node-blog .form-textarea, .grippie, .contact-form .form-text { width: 50%; }
-
+ 
+.node-article .form-text, .node-blog .form-text, form#contact-site-form .grippie { width: 100%; }
+ 
+.node-article .form-textarea, .node-blog .form-textarea, .grippie { width: 50%; }
+ 
+.contact-form .form-text { width: 50%; }
+ 
 @media only screen and (max-width: 767px) {
-    .node-blog .form-textarea, .grippie, .contact-form .form-text { width: 100%; }
+  .node-article .form-textarea, .node-blog .form-textarea, .grippie { width: 100%; }
+  .contact-form .form-text { width: 100%; }
 }
-
+ 
 .contact-form .form-textarea { width: 100%; }
 
 /* blog */
@@ -639,7 +642,7 @@ div.messages { padding: 15px 15px 15px 50px; margin-bottom: 20px; border: 1px so
 
 div.messages a { font-weight: bold; }
 
-div.messages.status {   color: #468847; background-color: #dff0d8; border-color: #d6e9c6; }
+div.messages.status { color: #468847; background-color: #dff0d8; border-color: #d6e9c6; }
 
 div.messages.status a { color: #356635; }
 
