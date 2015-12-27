@@ -45,7 +45,6 @@ function sunrise_preprocess_html(&$variables) {
 	/**
 	* Bootstrap CDN
 	*/
-    
     if (theme_get_setting('bootstrap_css_cdn', 'sunrise')) {
         $cdn = '//maxcdn.bootstrapcdn.com/bootstrap/' . theme_get_setting('bootstrap_css_cdn', 'sunrise')  . '/css/bootstrap.min.css';
         drupal_add_css($cdn, array('type' => 'external'));

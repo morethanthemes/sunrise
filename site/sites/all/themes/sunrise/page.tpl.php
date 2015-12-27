@@ -115,17 +115,19 @@
     <div id="banner" class="clearfix">
         <div class="container">
             <!-- #banner-inside -->
-                <div class="slogan">
-                <h2>Welcome to SUNRISE PUB!</h2>
-                <p>The place you want to be with your friends</p>
+            <div id="banner-inside" class="clearfix">
+                <div class="row">
+                    <div class="col-md-12">
+                    <?php print render($page['banner']); ?>
+                    </div>
                 </div>
-            <!-- EOF: #banner-inside -->        
+            </div>
+            <!-- EOF: #banner-inside -->      
         </div>
     </div>
     <!-- EOF:#banner -->
     <?php endif; ?>    
-</div> <!-- #header, menu, slogan and banner wrapper -->
-
+</div> <!-- #header, menu, slogan and banner wrapper --> 
 
 <!-- #page -->
 <div id="page" class="clearfix">
