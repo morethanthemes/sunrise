@@ -1143,3 +1143,7 @@ ul#portfolio-items-one-third li  img { width: 100%; height: auto; padding: 0; ma
 
 .portfolio-image { margin-bottom: 20px; }
 }
+
+@media all and (max-width: 480px) {
+.slogan p { display:none; }
+}
