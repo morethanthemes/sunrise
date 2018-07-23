@@ -3,7 +3,7 @@ Sunrise
 
 This repository contains the Drupal installation that runs at [drupalizing.com](http://drupalizing.com) and demonstrates the [“Sunrise”](https://drupal.org/project/sunrise) Drupal theme. We use this repository in order to maintain the above mentioned site and develop the corresponding theme. 
 
-You are welcome however to grab this code and have the demonstration site running on your end. By doing this you have the chance to see the ["Sunrise" theme in action](http://demo.drupalizing.com/?theme=sunrise) exactly the way it looks like on our demo.
+You are welcome however to grab this code and have the demonstration site running on your end. By doing this you have the chance to see the ["Sunrise" theme in action](http://demo.drupalizing.com/sunrise) exactly the way it looks like on our demo.
 
 Installation instructions
 --------------
